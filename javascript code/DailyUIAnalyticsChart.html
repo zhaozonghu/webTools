@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DailyUI - Analytics chart</title>
+    <style>
+        body {
+            min-height: 450px;
+            height: 100vh;
+            margin: 0;
+            background: -webkit-radial-gradient(ellipse farthest-corner at center top, #6cebcf 0%, #38a7aa 100%);
+            background: radial-gradient(ellipse farthest-corner at center top, #6cebcf 0%, #38a7aa 100%);
+            color: #404853;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .stage {
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            width: 400px;
+            height: 300px;
+            -webkit-perspective: 9999px;
+            perspective: 9999px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transform: translate(-50%, -50%) rotateY(30deg) rotateX(25deg);
+            transform: translate(-50%, -50%) rotateY(30deg) rotateX(25deg);
+        }
+        .stage.reset .chart .col {
+            height: 2px;
+        }
+
+        .table {
+            width: 510px;
+            position: absolute;
+            z-index: 1;
+            bottom: -38px;
+            left: -81px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            background: -webkit-linear-gradient(top, #f5f8fc, #dce1eb);
+            background: linear-gradient(to bottom, #f5f8fc, #dce1eb);
+            padding: 20px;
+        }
+        .table::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #429EA0;
+            -webkit-transform: translateY(5px) translateZ(-20px);
+            transform: translateY(5px) translateZ(-20px);
+            z-index: 1;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+        }
+        .table h1 {
+            text-align: center;
+            font-size: 24px;
+            margin: 0 0 5px;
+        }
+        .table div::before, .table div::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: -webkit-linear-gradient(top, #dcdfe3, #c5c9d1);
+            background: linear-gradient(to bottom, #dcdfe3, #c5c9d1);
+            -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+        .table div::after {
+            width: 100%;
+            height: 10px;
+            top: 100%;
+            left: 0;
+            background: -webkit-linear-gradient(0deg, #B0B7BF, #B0B7BF);
+            background: linear-gradient(90deg, #B0B7BF, #B0B7BF);
+            -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+        .table table td, .table table th {
+            font-size: 12px;
+            text-align: center;
+            height: 40px;
+            width: 60px;
+            vertical-align: bottom;
+        }
+        .table table td {
+            border-bottom: 1px dashed rgba(67, 182, 177, 0.71);
+        }
+
+        .chart {
+            width: 99%;
+            height: 100%;
+            top: 0;
+            left: 9px;
+            position: absolute;
+            z-index: 2;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: end;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            -webkit-transform: translateZ(40px);
+            transform: translateZ(40px);
+            -webkit-animation: rotate 5s infinite alternate ease-in-out -7.5s, o_O 0.1s 1;
+            animation: rotate 5s infinite alternate ease-in-out -7.5s, o_O 0.1s 1;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+        }
+        .chart .col {
+            width: 35px;
+            height: 90px;
+            background: -webkit-linear-gradient(top, #62e0c8, #39adad);
+            background: linear-gradient(to bottom, #62e0c8, #39adad);
+            position: relative;
+            bottom: 0;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-transition: height .4s ease-in-out, -webkit-transform .2s ease-in-out;
+            transition: height .4s ease-in-out, -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out, height .4s ease-in-out;
+            transition: transform .2s ease-in-out, height .4s ease-in-out, -webkit-transform .2s ease-in-out;
+            opacity: 0.7;
+        }
+        .chart .col::before, .chart .col::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: -webkit-linear-gradient(top, #44dabe, #39ACAC);
+            background: linear-gradient(to bottom, #44dabe, #39ACAC);
+            -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+        .chart .col::after {
+            width: 100%;
+            height: 10px;
+            top: 100%;
+            left: 0;
+            background: -webkit-linear-gradient(top, #369191, #329595);
+            background: linear-gradient(to bottom, #369191, #329595);
+            -webkit-transform: rotateX(-90deg);
+            transform: rotateX(-90deg);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+        }
+        .chart .col:nth-child(2) {
+            -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+            height: 130px;
+        }
+        .chart .col:nth-child(3) {
+            -webkit-transition-delay: .4s;
+            transition-delay: .4s;
+            height: 180px;
+        }
+        .chart .col:nth-child(4) {
+            -webkit-transition-delay: .6s;
+            transition-delay: .6s;
+            height: 145px;
+        }
+        .chart .col:nth-child(5) {
+            -webkit-transition-delay: .8s;
+            transition-delay: .8s;
+            height: 195px;
+        }
+        .chart .col:nth-child(6) {
+            -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+            height: 65px;
+        }
+        .chart .col:nth-child(7) {
+            -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+            height: 120px;
+        }
+        .chart .col div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: #fff;
+            opacity: .3;
+            -webkit-transform: translateZ(-10px);
+            transform: translateZ(-10px);
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+        .chart .col div::before, .chart .col div::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #07B990;
+            opacity: 1;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            -webkit-transform: translateX(-3px) translateY(2px) translateZ(-8px);
+            transform: translateX(-3px) translateY(2px) translateZ(-8px);
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+        }
+        .chart .col:hover {
+            -webkit-transform: translateZ(8px);
+            transform: translateZ(8px);
+            -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        .chart .col:hover div::before, .chart .col:hover div::after {
+            -webkit-transform: translateX(-3px) translateY(2px) translateZ(-12px);
+            transform: translateX(-3px) translateY(2px) translateZ(-12px);
+        }
+
+        .reload {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: #fff;
+            border-radius: 20px;
+            font-size: 11px;
+            line-height: 1.5;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            z-index: 10;
+            cursor: pointer;
+            box-shadow: 0 6px 7px #31A09E;
+        }
+        .reload svg {
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+
+Follow me on
+Dribbble: https://dribbble.com/supahfunk
+Twitter: https://twitter.com/supahfunk
+Codepen: http://codepen.io/supah/
+
+-->
+
+<div class="stage reset">
+    <div class="table">
+        <h1>Statistics</h1>
+        <div></div>
+        <table>
+            <tr>
+                <th>50</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>40</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>30</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>20</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+
+        </table>
+    </div>
+    <div class="chart">
+
+        <div class="col">
+            <div></div>
+        </div>
+        <div class="col">
+            <div></div>
+        </div>
+        <div class="col">
+            <div></div>
+        </div>
+        <div class="col">
+            <div></div>
+        </div>
+        <div class="col">
+            <div class="div"></div>
+        </div>
+        <div class="col">
+            <div></div>
+        </div>
+        <div class="col">
+            <div></div>
+        </div>
+    </div>
+</div>
+<div class="reload">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 92.33 92.33" style="enable-background:new 0 0 92.33 92.33;" xml:space="preserve">
+<g>
+	<path d="M70.598,16.753c-1.722-1.24-4.113-0.852-5.349,0.866c-1.242,1.716-0.853,4.113,0.865,5.35   c13.613,9.818,18.021,27.857,10.482,42.89c-4.082,8.138-11.088,14.202-19.726,17.066c-8.636,2.871-17.877,2.2-26.013-1.879   c-8.134-4.083-14.197-11.088-17.066-19.722c-2.866-8.642-2.197-17.877,1.886-26.014c4.958-9.89,14.458-16.779,25.413-18.429   c0.074-0.008,0.137-0.036,0.211-0.053l0.157,7.571c0.021,0.839,0.542,1.585,1.321,1.889c0.782,0.305,1.672,0.11,2.25-0.496   l10.904-11.379c0.794-0.828,0.764-2.142-0.062-2.933L44.492,0.577c-0.606-0.582-1.499-0.739-2.267-0.399   c-0.251,0.108-0.476,0.269-0.662,0.462c-0.372,0.389-0.585,0.919-0.579,1.479l0.151,7.212c-0.385-0.063-0.78-0.087-1.188-0.027   c-13.418,2.021-25.052,10.46-31.125,22.571C-1.499,52.451,6.85,77.584,27.424,87.901c5.989,3.005,12.362,4.429,18.646,4.429   c15.306,0,30.065-8.439,37.382-23.028C92.688,50.884,87.284,28.782,70.598,16.753z" fill="#404853"/></svg>  reload
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+    var $stage = $('.stage'),
+            mouseX,
+            mouseY,
+            x = 0,
+            y = 0,
+            followX = 0,
+            followY = 0,
+            friction = 1 / 12;
+
+    function animate(){
+        x += (followX - x) * friction;
+        y += (followY - y) * friction;
+        $stage.css({
+            '-o-transform': 'translate(-50%, -50%) rotateY(' + x + 'deg) rotateX(' + y + 'deg)',
+            '-moz-transform': 'translate(-50%, -50%) rotateY(' + x + 'deg) rotateX(' + y + 'deg)',
+            '-webkit-transform': 'translate(-50%, -50%) rotateY(' + x + 'deg) rotateX(' + y + 'deg)',
+            'transform': 'translate(-50%, -50%) rotateY(' + x + 'deg) rotateX(' + y + 'deg)'
+        });
+        window.requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    $(window).on('mousemove click', function(e) {
+        mouseX = e.clientX / $(window).width();
+        mouseY = e.clientY / $(window).height();
+        followX = 5 + (30 * mouseX);
+        followY = 5 + (20 * mouseY);
+    });
+
+    $('.reload').click(function(){
+        $('.stage').addClass('reset');
+        setTimeout(function(){
+            $('.stage').removeClass('reset');
+        }, 2000);
+    });
+
+    setTimeout(function(){
+        $('.stage').removeClass('reset');
+    }, 400);
+</script>
+</body>
+</html>

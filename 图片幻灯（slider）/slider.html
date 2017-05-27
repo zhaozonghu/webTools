@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页幻灯</title>
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/skippr.css">
+    <style>
+        /*--幻灯锚点--*/
+        .skippr-nav-element-block{
+            width: 20px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 10px;
+            margin: 0 5px;
+        }
+        .skippr-nav-element-active{
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="theTarget">
+            <div style="background-image: url(img/slider01.jpg)"></div>
+            <div style="background-image: url(img/slider02.jpg)"></div>
+            <div style="background-image: url(img/slider03.jpg)"></div>
+            <div style="background-image: url(img/slider04.jpg)"></div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skippr.min.js"></script>
+    <script>
+        $(function(){
+            $('#theTarget').skippr({
+                easing:'easeInCubic',
+                arrows:false
+            });
+        })
+    </script>
+</body>
+</html>

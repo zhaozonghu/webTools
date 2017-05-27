@@ -1,0 +1,17 @@
+function randomNum(max){
+    var randoms=[];
+    while (true)
+    {
+        var isExists = false;
+        var random = parseInt(0 + max * (Math.random()))
+        for (var i = 0; i < randoms.length; i++) {
+            if (random === randoms[i]) {
+                isExists = true;
+                break;
+            }
+        }
+        if (!isExists) randoms.push(random);
+        if (randoms.length === 6)break;
+    }
+    return randoms;
+}

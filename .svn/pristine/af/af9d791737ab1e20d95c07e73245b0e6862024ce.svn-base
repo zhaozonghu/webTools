@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>WAP站公用资源</title>
+    <script src="js/flexible.js"></script>
+    <link rel="stylesheet" href="css/common.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/m.css">
+</head>
+<body class="withHeader">
+<header id="indexHeader">
+    <div class="top_bar">
+        <div class="abs_m"><a href="#" class="refresh_title btn"></a><a href="#" class="refresh_btn btn" id="js_refresh"></a></div>
+        <div class="abs_l"><a href="javascript:;" class="msg-box"></a></div>
+        <div class="abs_r"><a href="javascript:;" class="btn search"></a></div>
+    </div>
+    <div class="top_menu_bar">
+        <div class="top_menu_more">
+            <div class="list_shadow"></div>
+            <a href="javascript:;" class="more_btn"></a>
+        </div>
+        <div id="js_top_menu" class="top_menu_list">
+            <a data-type="toutiao">推荐</a>
+            <a data-type="shehui" class="">社会</a>
+            <a data-type="yule">娱乐</a>
+            <a data-type="shipin" class="">视频</a>
+            <a data-type="guonei" class="">国内</a>
+            <a data-type="guoji" class="">国际</a>
+            <a data-type="tupian" class="">图片</a>
+            <a data-type="keji" class="">科技</a>
+            <a data-type="meinv" class="active">美女</a>
+            <a data-type="weikandian" class="">滚动</a>
+            <a data-type="jiankang" class="">健康</a>
+            <a data-type="lishi" class="">人文</a>
+            <a data-type="junshi" class="">军事</a>
+            <a data-type="tiyu" class="">体育</a>
+            <a data-type="xiaohua" class="">搞笑</a>
+            <a data-type="shishang" class="">时尚</a>
+            <a data-type="caijing" class="">财经</a>
+        </div>
+    </div>
+</header>
+<content class="con_list" id="js_content">
+    <!--幻灯-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/pic/slider1.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/pic/slider2.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/pic/slider3.jpg"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/pic/slider4.jpg"></a></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--移动端分享-->
+    <div class="share_wrapper">
+        <a href="javascript:;" class="share_movement sns" data-app="weixin"></a>
+        <a href="javascript:;" class="share_wechat sns" data-app="weixinFriend"></a>
+        <a href="javascript:;" class="share_sina sns" data-app="sinaWeibo"></a>
+        <a href="javascript:;" class="share_qzone sns" data-app="QZone"></a>
+        <a href="javascript:;" class="share_qq sns" data-app="QQ"></a>
+    </div>
+    <div class="con_listWrap" id="js_news_list">
+        <!--大图资讯-->
+        <section class="has_action">
+            <a href="javascript: void(0)" class="article_link clearfix">
+                <div class="item_detail">
+                    <h3 class="dotdot line3">2000多游客遭到零元团诈骗 被甩在曼谷机场</h3>
+                    <div class="list_img_holder_large list_img_holder_large_fix">
+                        <img src="images/pic/1bf5000429027dc3acbc.jpg">
+                    </div>
+                    <div class="item_info">
+                        <div>
+                            <span class="src space">光明网头条号</span>
+                            <span class="cmt space">评论 142</span>
+                            <span class="time" title="2017-04-13 10:04">刚刚</span>
+                            <span data-id="6408278628357915137" class="dislike-news fr"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!--无图资讯-->
+        <section class="has_action">
+            <a href="javascript: void(0)" class="article_link clearfix ">
+                <div class="item_detail">
+                    <h3 class="dotdot line3">美航母逼近朝鲜半岛 特氏“亚太战略”3.0版呼之欲出</h3>
+                    <div class="item_info">
+                        <div>
+                            <span class="src space">中国新闻网</span>
+                            <span class="cmt space">评论 0 </span>
+                            <span class="time" title="2017-04-13 08:20">1小时前</span>
+                            <span data-id="6408219193825575169" class="dislike-news fr"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!--多图资讯-->
+        <section class="has_action">
+            <a href="javascript: void(0)" class="article_link clearfix ">
+                <div class="item_detail"><h3 class="dotdot line3">《名义》丁义珍大有来头，入行30余年零绯闻，曾拒演该角色</h3>
+                    <div class="list_image">
+                        <ul class="clearfix">
+                            <li class="list_img_holder"><img src="images/pic/1a6c000934b321074816.jpg"></li>
+                            <li class="list_img_holder"><img src="images/pic/17810019707e52dfceb7.jpg"></li>
+                            <li class="list_img_holder"><img src="images/pic/1a6b00093e1536d95c90.jpg"></li>
+                        </ul>
+                    </div>
+                    <div class="item_info">
+                        <div class="item_info">
+                            <div>
+                                <span class="src space">中国新闻网</span>
+                                <span class="cmt space">评论 0 </span>
+                                <span class="time" title="2017-04-13 08:20">1小时前</span>
+                                <span data-id="6408219193825575169" class="dislike-news fr"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+        <!--广告位-->
+        <section class="has_action">
+            <a href="#" class="article_link clearfix " data-action-label="click_headline"
+               data-tag="ad">
+                <h3 class="dotdot line3 ">看看你手机号能借多少钱！额度高达30万，快至15秒放款</h3>
+                <div class="list_img_holder_large ">
+                    <img src="images/pic/19480007b76134360c6d.jpg">
+                </div>
+                <div class="item_info">
+                    <span class="gg_label space">广告</span>
+                    <span class="src space">拉卡拉-无抵押贷款</span>
+                    <span class="cmt space">评论 0</span>
+                    <span class="time" title="2017-04-13 08:14">1小时前</span>
+                    <span data-id="6400898922314727681" class="dislike-news  fr"></span>
+                </div>
+            </a>
+        </section>
+        <!--单图资讯-->
+        <section class="middle_mode has_action">
+            <a href="javascript: void(0)" class="article_link clearfix ">
+                <div class="item_detail desc"><h3 class="dotdot line3 image-margin-right">俄罗斯否决叙利亚化武问题决议草案 中方弃权</h3>
+                    <div class="item_info">
+                        <div>
+                            <span class="src space">中国新闻网</span>
+                            <span class="cmt space">评论 0 </span>
+                            <span class="time" title="2017-04-13 08:20">1小时前</span>
+                            <span data-id="6408219193825575169" class="dislike-news fr"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_img_holder"><img class="lazy" src="http://i0.letvimg.com/lc03_img/201607/19/14/39/1436/a_tempBg2.png" data-src="images/pic/1bb3000d391e35b16c63.jpg"></div>
+            </a>
+        </section>
+        <!--大图视频-->
+        <section class="has_action">
+            <a href="javascript: void(0)" class="article_link clearfix channel__video">
+                <div class="item_detail">
+                    <div class="list_img_holder_large">
+                        <div class="video_mask"></div>
+                        <h3 class="dotdot line3">我只是个安灯师傅，为什么美女要对我提出这样的请求！</h3>
+                        <img src="images/pic/18a90003ed5a7a1d7859.jpg">
+                        <span class="video-btn"></span>
+                    </div>
+                    <div class="item_info">
+                        <div>
+                            <span class="src space">中国新闻网</span>
+                            <span class="cmt space">评论 0 </span>
+                            <span class="time" title="2017-04-13 08:20">1小时前</span>
+                            <span data-id="6408219193825575169" class="dislike-news fr"></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </div>
+    <div id="J_loading" class="loading">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <p class="txt">数据加载中</p>
+    </div>
+    <!--App下载提示层-->
+    <div class="app_downPanel ">
+        <div class="com_pannel pannel_bottom">
+            <a href="javascript:;" class="close"></a>
+            <a href="#" target="_self" class="download" rel="nofollow">
+                <div class="logo"></div>
+                <div class="banner-label">
+                    <p class="tb">鹦鹉直播</p>
+                    <p class="title-sub">打开直播新世界</p>
+                </div>
+                <div class="open">立即打开</div>
+            </a>
+        </div>
+    </div>
+</content>
+<script src="js/common.min.js"></script>
+<script src="js/m.js"></script>
+</body>
+</html>

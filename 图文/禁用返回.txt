@@ -1,0 +1,2 @@
+history.pushState({ page: 1 }, "title 1", "#mixiu");
+window.onhashchange = function (event) {window.location.hash = "mixiu"; };

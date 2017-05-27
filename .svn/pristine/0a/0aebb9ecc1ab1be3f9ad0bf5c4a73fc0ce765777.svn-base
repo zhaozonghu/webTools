@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>千影头条</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="applicable-device" content="mobile">
+    <link rel="stylesheet" type="text/css" href="http://news.iqying.com/statics/css/app/base.css" />
+    <link rel="stylesheet" type="text/css" href="http://news.iqying.com/statics/css/app/main.css?v=1.0.1" />
+</head>
+<body>
+<script src="http://news.iqying.com/statics/js/app/zepto.min.js"></script>
+<script src="http://news.iqying.com/statics/js/app/photoswipe.js?v=1.0.1"></script>
+<script src="http://news.iqying.com/statics/js/app/lazyload.js"></script>
+<link href="http://news.iqying.com/statics/css/app/photoswipe.css" rel="stylesheet"/>
+<link href="http://news.iqying.com/statics/css/app/default-skin/default-skin.css?v=1.0.1" rel="stylesheet"/>
+<div class="detail">
+    <div class="detailTop">
+        <h1>20多省为何特派警察进京？</h1>
+        <div class="time">
+            <span>来源：今日头条</span>
+            <span>01-14</span>
+        </div>
+    </div>
+    <div class="content_info">
+        <div><p style="text-align:center"><img src="http://p0.ifengimg.com/a/2017_02/a81657159fc01da_size39_w800_h450.jpg" width="550" height="309" alt=""></p><p><strong>撰文 | 高语阳 编辑 | 傅凝</strong></p><p>35岁的重庆民警陈冰行走在北京复兴路南的一所校园里。</p><p>几乎与此同时，重庆丰都县公安局民警王立鹏和同事们也来到这里。</p><p>这是2016年底的12月29日。一进到公安大学位于复兴路南木樨地的这座校园，几位重庆老乡的身份便截然不同。陈冰是“考官”，而王立鹏他们，则是来参加比试的选手。</p><p>政知局（微信ID：bqzhengzhiju）小编的同事在公安大学的礼堂，就坐在陈冰的后排，充当媒体评委。</p><p><img src="http://p3.pstatp.com/large/153800054a1777f60db9" img_width="640" img_height="480" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 开始前的评委席</p><p><img src="http://p1.pstatp.com/large/1532000559721211d784" img_width="640" img_height="480" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 这么多评委，注意了，屏幕上的分数只是测试系统！</p><p>台上，则是20多个省选出的几十名选手。<br></p><p>这舞台有个名字——“全国公安机关改革创新大赛”。60多年来，这样的比赛是第一次。</p><h1><strong>刚离开山城一天，儿子出生了</strong></h1><p>怀孕4个月的孟庆甜第一个登场。</p><p>她带来的是公安部刑事侦查局的公安部儿童失踪信息紧急发布平台“团圆”系统。这是上线一个多月，用于全国一线打拐民警即时上报各地儿童失踪信息，并通过移动客户端向周边群众推送的系统。</p><p>台下，就在政知局（微信ID：bqzhengzhiju）小编同事的身后，公安部刑事侦查局的一位女民警把手机架在三脚架上，用刑侦局的微博直播同事的表现。</p><p>“作为一个怀孕四个月的准妈妈，我能深刻体会到孩子对一个家庭意味着什么。”孟庆甜在台上这么说，“我在工作中遇到过各种案例，有孩子丢失后，家里老人在10天左右就因为自责离世的，有妈妈在孩子丢了之后精神失常的，还有的家庭为了找孩子倾家荡产。”</p><p>其实，孟庆甜那天是“带病上阵”。</p><p><img src="http://p1.pstatp.com/large/153800054a1b64c86e09" img_width="640" img_height="480" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 前三个上场的代表队一并公布得分</p><p>前一天下午，孟庆甜参加了彩排，“礼堂温度比较低，挺冷的，我又穿着警服，也比较薄，彩排了两个多小时，回家后就发烧感冒了，那天晚上也没有睡好。”<br></p><p>孟庆甜是怀着身孕站在台上，而来自重庆刑侦总队的民警王清山是在比赛前一日，妻子刚刚生产。</p><p>王清山说，自己12月27日离开重庆到北京，28日妻子生产，“她预产期在1月初，我想着参加完比赛回家就可以陪她生产，但孩子提前来到了。”王清山说，自己也想过要不要放弃大赛，自己先回家照顾妻子，由其他人代替自己上台。“但想了想还是不合适，毕竟我对这个项目最清楚，我来介绍最合适。”</p><h1><strong>三个人的派出所和“人机对话”</strong></h1><p>安徽马鞍山市公安局信息中心副主任周克武的产品已在4600多个公安机关推广。</p><p>政知局（微信ID：bqzhengzhiju）发现，他的许多创新源自1999年。</p><p>当时他在农村派出所工作，所里只有三个人：所长、指导员和周克武。所里户籍、治安、内勤的工作他都要做，“有时候村民来办户籍我却正好出警去了，村民就白跑一趟。”</p><p>周克武是计算机专业毕业，他想到是否能让电脑代替人回答群众问题，几个月的时间，就制作出了“人机语音对话系统”。群众有什么问题，只要向电脑发问，就可以收到电脑自动语音回答。</p><p>2003年前后，周克武又觉得，基层派出所案件多、警力少，大量的文书工作占用了民警很多时间和精力。“我就想这样做效率不高，质量也得不到保证，能不能开发个软件解决这个问题。”后来，周克武做出了“行政案件表格自动生成系统”，也就是“云智办案通”的雏形。</p><p>从那时候开始到现在，十多年来，周克武就一直在完善、改良这套系统。2013年公安部统一各省文书式样之前，他针对各省文书式样制作了30多个版本的软件。十年多的时间里，他还经常前往各地进行系统应用培训，为开发藏文版系统，他曾两次智力援藏半年，甚至还开发了蒙文、维文版本。</p><p>有一次内蒙古赤峰市翁牛特旗公安局法制室主任范景国给周克武打电话：“他问我要银行卡号，说是因为我把蒙文版的办案系统帮他们做出来，局里经过研究，要给我汇一些钱。”周克武说：“这个系统我是免费为公安机关提供的，说了免费，就绝对是一分钱不收。”</p><p>“有人说我也不赚钱，还花这么大力气，图什么，我想，能通过自己的努力为全国广大民警提效减负，也许就是一种获得感和成就感吧，人活着总要做点有意义的事情。”</p><h1><strong>盾牌喷出辣椒素？这就对了</strong></h1><p>北京市公安局警务实战教官赵征和同事带着喷射盾牌上场时，包括政知局（微信ID：bqzhengzhiju）在内的好些观众精神为之一振。</p><p>喷射盾牌是什么？</p><p>就是看起来起到防御作用的盾牌，还能喷射出辣椒素，起到一定的制服嫌疑人的作用。</p><p><img src="http://p3.pstatp.com/large/159d0000142645360e7f" img_width="640" img_height="425" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 会喷气的盾牌，其实喷的是辣椒素</p><p>这个玄机就在握把上方，分别安装摁压式催泪喷射装置，按下后盾牌喷射辣椒素，可以喷射到5米以外，远距离就可以使嫌疑人失去反抗能力。<br></p><p>喷射盾牌从2014年初开始着手研发，最初，教官们对公安部列装的十多种盾牌逐一测试，北京市公安局警务实战教官王小晔说：“就是用各种刀和斧子砍盾牌，找到大小、形状、耐砍能力都合适的法式盾牌”。确定使用法式盾牌之后，教官们再继续针对法式盾牌进行刀砍实验，“要收集各种数据，例如一块盾牌用不同的砍法，砍多少下就砍坏了等，我们最后砍了100多个盾牌才得出完整可靠的数据。”</p><p>喷射盾牌设计出来之后还要进行无数次场景模拟测试，“我们要搞清楚比如喷射后几秒内对方喘不上气，几秒内丧失反抗能力，不同的人对辣椒素都有哪些反应等，为了数据的真实可靠，我们每个人都被辣椒素喷了几十次”，赵征说：“被喷之后主要是喘不上气，面部灼烧，眼睛蛰痛，我反正每次被喷之后就丧失反抗意识了，只想着闭紧眼睛和嘴，减少不适感。”</p><p><img src="http://p2.pstatp.com/large/153800054a1ac2483d66" img_width="640" img_height="425" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 演练场景</p><p>2014年初，研发盾牌的早期还发生过意外。当时，为了测试各种场景下警械的使用情况，在一次仿真模拟时，教官团安排被喷了辣椒素的教官继续闭着眼睛乱砍，结果刀撞在盾牌上，弹到了举着盾牌的教官头上，顿时鲜血直流。“那位教官头上缝了十多针，这个意外也让我们总结出来，民警在使用盾牌时，一定要举过头顶，保护好头部。”<br></p><p><img src="http://p9.pstatp.com/large/1532000559710de913cb" img_width="599" img_height="604" alt="20多省为何特派警察进京？" onerror="javascript：errorimg.call(this);"></p><p class="pgc-img-caption">△ 粘合式约束带这么用</p><p>而今，这样的盾牌连同粘合式约束带一道，已在数十个公安局列装、配发。<br></p><h1><strong>带着4岁儿子上山道</strong></h1><p>让政知局（微信ID：bqzhengzhiju）印象深刻的，还有重庆丰都县公安局报送的弯道会车预警器。</p><p>都知道重庆山多，许多道路路窄弯急，视距较差，驾驶员常由于无法预判对向车道的来车情况而酿成车祸。</p><p>弯道会车预警器就是针对这一状况而设计，基本原理是在道路两端路面埋设无线地磁传感器，采集过往车流量和车速等数据，通过无线传感器网络技术发送到路旁预警显示屏上，如果对向有来车，显示屏就有红色字幕提示“前方来车”，没有来车就用绿色字幕提示“注意弯道”。</p><p>这个想法是由丰都县公安局民警王立鹏提出并设计。王立鹏回忆，2014年春节前夕，丰都县一处弯道发生了重大交通事故。“当时场面很惨烈，赶来的亲属在马路边大哭，我当时内心很难过，本来是回家过年的喜事，变成了一个悲剧。”</p><p>王立鹏就想有没有什么方法能减少这种悲剧。他查阅了大量的资料，还找了国外的相关设备，发现没有可以直接拿来用的产品。之后他就自己开始研发，用了一年多的时间，读了大量资料，进行了各种尝试，终于将产品设计出来。接下来他又开始四处找公司开模，“工厂都是批量生产，我这才只做一个，老板都不愿意给我做，没办法就到处跑，找工厂老板说情，好不容易才说动了一个老板。”</p><p>王立鹏的产品前后用了1年多时间，后来，为了去不同路段测试预警器，他跑了不少荒郊野外的弯道，“平时还要工作，只能利用周末和节假日往外跑，有些远的地方来回车程两小时，找到弯道就抱着仪器站在路边测试，周六日就总是不在家。”王立鹏的儿子今年4岁，还处于需要人陪伴的年纪，在他做设计期间，为了既完成测试又能陪伴儿子，他周末去山道上测试时就把儿子也带到现场。</p><p>通过选择不同的路段作为试点后，弯道会车预警器已经在重庆全市范围内推广。</p><p><strong>校对 | 李喆</strong></p></div><p class="footnote">本文为头条号作者原创，未经授权，不得转载。</p>    </div>
+
+    <div class="detailBot">
+        <h2><a href="#"></a><a href="http://www.toutiao.com/i6375257843267797505/" style="float: right;">阅读原文</a></h2>
+    </div>
+</div>
+<div id="comm_container">
+
+</div>
+<script>
+    $('document').ready(function(){
+        var o = '<div id="pageletPhotoswipe" class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div> </div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div>';
+        $("body").append(o);
+        window.slideList = [];
+        if($('.content_info img').attr('img_width')||$('.content_info img').attr('width')||$('.content_info img').attr('data-width')){
+            bindPhotoSwipe();
+        }else{
+            var t_img,isLoad = true;
+            // 判断图片加载状况，加载完成后回调
+            isImgLoad(function(){
+                // 加载完成
+                bindPhotoSwipe();
+            });
+            // 判断图片加载的函数
+            function isImgLoad(callback){
+                $('.content_info img').each(function(){
+                    if(this.height === 0){isLoad = false;return false;}else{
+                        $(this).attr('data-w',this.width).attr('data-h',this.height);
+                    }
+                });
+                if(isLoad){
+                    clearTimeout(t_img);
+                    callback();
+                }else{isLoad = true;
+                    t_img = setTimeout(function(){isImgLoad(callback);},500);
+                }
+            }
+        }
+    });
+    function bindPhotoSwipe(){
+        $('.content_info img').each(function () {
+            var e = $(this),w=e.attr('data-w')|| e.attr('img_width')|| e.attr('width')|| e.attr('data-width'),h=e.attr('data-h')||e.attr('img_height')|| e.attr('height')|| e.attr('data-height'),s= e.attr('src'),p = e.attr('alt')|| e.attr('title');
+            window.slideList.push({src: s, w: w, h: h,title:p});
+        });
+        //图库
+        $("body").on("click", ".content_info img", function () {
+            var con_gallery = new photoswipe($(".pswp")[0], photoswipeUI, window.slideList, {index: $(this).attr("data-index") - 0});
+            var browserVer = navigator.userAgent.toLowerCase();
+            if((browserVer.indexOf('android') > -1 || browserVer.indexOf('linux') > -1)){
+                //安卓
+                try{java_qy.onPhotosShow()}catch (e){}
+            }else if(browserVer.indexOf('iphone') > -1 || browserVer.indexOf('ipad') > -1) {
+                //IOS
+                try{window.webkit.messageHandlers.PhotosShow.postMessage('测试')}catch (e){}
+            }
+            con_gallery.init();
+        });
+        $(".content_info img").each(function(i,o){
+            $(o).attr("data-index", i)
+        });
+    }
+</script>
+<script>
+    var commentid="content_36-164526-1";
+</script>
+<!-- 底部footer开始 -->
+<div id="footer" style="display: none;">
+    <div id="copyright">
+        <div class="clear">
+            <span>Copyright@2016千影公司版权所有</span>
+            <span><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP备14037201号-1</a></span>
+            <ul class="outer">
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="js_tc" class="tc"><span><img src="http://m.news.iqying.com/statics/plugin/wap_v_1_0/images/logo2.png" /></span><i id="js_closeBtn"></i><a href="http://app.iqying.com/down">下载浏览器查看更多</a></div>
+<!-- 底部footer结束 -->
+</body>
+</html>

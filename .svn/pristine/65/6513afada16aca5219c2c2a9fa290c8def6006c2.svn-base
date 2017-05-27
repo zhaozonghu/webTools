@@ -1,0 +1,33 @@
+<script type="text/javascript">
+        /*
+         * 设置HTML元素属性
+         * www.51-n.com 原创 吴先成 qQ229256237
+         * @param object o 要设置属性的HTML元素
+         * @param string a 要设置的属性名        
+         * @param string v 要设置的属性值
+        */
+        function setAttribute(o,a,v){
+                if(typeof o!='object'||typeof a!='string') return;
+                a=='class'?o.className=v:o.setAttribute(a,v);
+        }
+        /*
+         * 获取HTML元素属性值
+         * @param object o 要获取属性的HTML元素
+         * @param string a 要获取的属性名
+         * @return 返回要获取的属性值
+        */                
+        function getAttribute(o,a){
+                if(typeof o!='object'||typeof a!='string') return;
+                return a=='class'?o.className:o.getAttribute(a);
+        }
+        /*
+         * 移除HTML元素属性
+         * @param object o 要移除属性的HTML元素
+         * @param string a 要移除的属性名        
+        */                
+        function removeAttribute(o,a){
+                if(typeof o!='object'||typeof a!='string') return;
+                o.removeAttribute(a);
+                if(a=='class') o.removeAttribute('className');
+        }
+</script>
