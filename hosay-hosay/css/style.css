@@ -1,0 +1,6514 @@
+@import url("https://fonts.googleapis.com/css?family=Damion");
+html {
+  background: black;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  background: #000;
+}
+
+.hosay {
+  opacity: .65;
+  font-family: 'Damion';
+  position: absolute;
+  top: 147px;
+  left: 155px;
+  width: 90px;
+  height: 20px;
+  font-size: 40px;
+  padding: 4px 0 0 0;
+  text-shadow: 0 0 1px #444;
+  text-align: center;
+  z-index: 5;
+  color: white;
+}
+
+.flake1:nth-child(1) {
+  animation: r1 1s linear infinite;
+  animation-delay: -40ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.1;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r1 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 375px;
+    left: 158px;
+    transform: rotateZ(532deg) scale(2);
+  }
+}
+.flake1:nth-child(2) {
+  animation: r2 1s linear infinite;
+  animation-delay: -80ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.98;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r2 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 156px;
+    left: 127px;
+    transform: rotateZ(84deg) scale(3);
+  }
+}
+.flake1:nth-child(3) {
+  animation: r3 1s linear infinite;
+  animation-delay: -120ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r3 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 36px;
+    left: 308px;
+    transform: rotateZ(167deg) scale(3);
+  }
+}
+.flake1:nth-child(4) {
+  animation: r4 1s linear infinite;
+  animation-delay: -160ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.7;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r4 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 400px;
+    left: 266px;
+    transform: rotateZ(374deg) scale(3);
+  }
+}
+.flake1:nth-child(5) {
+  animation: r5 1s linear infinite;
+  animation-delay: -200ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.1;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r5 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 221px;
+    left: 111px;
+    transform: rotateZ(691deg) scale(3);
+  }
+}
+.flake1:nth-child(6) {
+  animation: r6 1s linear infinite;
+  animation-delay: -240ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.14;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r6 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 176px;
+    left: 303px;
+    transform: rotateZ(887deg) scale(2);
+  }
+}
+.flake1:nth-child(7) {
+  animation: r7 1s linear infinite;
+  animation-delay: -280ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.28;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r7 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 212px;
+    left: 300px;
+    transform: rotateZ(850deg) scale(2);
+  }
+}
+.flake1:nth-child(8) {
+  animation: r8 1s linear infinite;
+  animation-delay: -320ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.05;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r8 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 381px;
+    left: 44px;
+    transform: rotateZ(858deg) scale(3);
+  }
+}
+.flake1:nth-child(9) {
+  animation: r9 1s linear infinite;
+  animation-delay: -360ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.75;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r9 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 320px;
+    left: 384px;
+    transform: rotateZ(546deg) scale(2);
+  }
+}
+.flake1:nth-child(10) {
+  animation: r10 1s linear infinite;
+  animation-delay: -400ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.2;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r10 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 167px;
+    left: 41px;
+    transform: rotateZ(889deg) scale(3);
+  }
+}
+.flake1:nth-child(11) {
+  animation: r11 1s linear infinite;
+  animation-delay: -440ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r11 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 60px;
+    left: 153px;
+    transform: rotateZ(355deg) scale(3);
+  }
+}
+.flake1:nth-child(12) {
+  animation: r12 1s linear infinite;
+  animation-delay: -480ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.75;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r12 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 184px;
+    left: 16px;
+    transform: rotateZ(849deg) scale(3);
+  }
+}
+.flake1:nth-child(13) {
+  animation: r13 1s linear infinite;
+  animation-delay: -520ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r13 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 154px;
+    left: 361px;
+    transform: rotateZ(869deg) scale(3);
+  }
+}
+.flake1:nth-child(14) {
+  animation: r14 1s linear infinite;
+  animation-delay: -560ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.94;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r14 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 95px;
+    left: 130px;
+    transform: rotateZ(861deg) scale(2);
+  }
+}
+.flake1:nth-child(15) {
+  animation: r15 1s linear infinite;
+  animation-delay: -600ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.2;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r15 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 112px;
+    left: 67px;
+    transform: rotateZ(260deg) scale(1);
+  }
+}
+.flake1:nth-child(16) {
+  animation: r16 1s linear infinite;
+  animation-delay: -640ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.81;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r16 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 6px;
+    left: 85px;
+    transform: rotateZ(141deg) scale(3);
+  }
+}
+.flake1:nth-child(17) {
+  animation: r17 1s linear infinite;
+  animation-delay: -680ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.95;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r17 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 91px;
+    left: 345px;
+    transform: rotateZ(757deg) scale(3);
+  }
+}
+.flake1:nth-child(18) {
+  animation: r18 1s linear infinite;
+  animation-delay: -720ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.5;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r18 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 120px;
+    left: 246px;
+    transform: rotateZ(157deg) scale(2);
+  }
+}
+.flake1:nth-child(19) {
+  animation: r19 1s linear infinite;
+  animation-delay: -760ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.66;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r19 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 346px;
+    left: 220px;
+    transform: rotateZ(310deg) scale(3);
+  }
+}
+.flake1:nth-child(20) {
+  animation: r20 1s linear infinite;
+  animation-delay: -800ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.58;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r20 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 229px;
+    left: 61px;
+    transform: rotateZ(338deg) scale(3);
+  }
+}
+.flake1:nth-child(21) {
+  animation: r21 1s linear infinite;
+  animation-delay: -840ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.77;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r21 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 165px;
+    left: 287px;
+    transform: rotateZ(45deg) scale(2);
+  }
+}
+.flake1:nth-child(22) {
+  animation: r22 1s linear infinite;
+  animation-delay: -880ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.5;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r22 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 340px;
+    left: 16px;
+    transform: rotateZ(485deg) scale(1);
+  }
+}
+.flake1:nth-child(23) {
+  animation: r23 1s linear infinite;
+  animation-delay: -920ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.46;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r23 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 120px;
+    left: 355px;
+    transform: rotateZ(876deg) scale(2);
+  }
+}
+.flake1:nth-child(24) {
+  animation: r24 1s linear infinite;
+  animation-delay: -960ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.93;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r24 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 376px;
+    left: 117px;
+    transform: rotateZ(724deg) scale(1);
+  }
+}
+.flake1:nth-child(25) {
+  animation: r25 1s linear infinite;
+  animation-delay: -1000ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.92;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r25 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 281px;
+    left: 269px;
+    transform: rotateZ(188deg) scale(1);
+  }
+}
+.flake1:nth-child(26) {
+  animation: r26 1s linear infinite;
+  animation-delay: -1040ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.58;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r26 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 388px;
+    left: 123px;
+    transform: rotateZ(329deg) scale(2);
+  }
+}
+.flake1:nth-child(27) {
+  animation: r27 1s linear infinite;
+  animation-delay: -1080ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r27 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 188px;
+    left: 35px;
+    transform: rotateZ(816deg) scale(2);
+  }
+}
+.flake1:nth-child(28) {
+  animation: r28 1s linear infinite;
+  animation-delay: -1120ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r28 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 332px;
+    left: 153px;
+    transform: rotateZ(67deg) scale(2);
+  }
+}
+.flake1:nth-child(29) {
+  animation: r29 1s linear infinite;
+  animation-delay: -1160ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.18;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r29 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 34px;
+    left: 318px;
+    transform: rotateZ(300deg) scale(1);
+  }
+}
+.flake1:nth-child(30) {
+  animation: r30 1s linear infinite;
+  animation-delay: -1200ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.6;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r30 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 321px;
+    left: 282px;
+    transform: rotateZ(701deg) scale(1);
+  }
+}
+.flake1:nth-child(31) {
+  animation: r31 1s linear infinite;
+  animation-delay: -1240ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.84;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r31 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 287px;
+    left: 341px;
+    transform: rotateZ(351deg) scale(3);
+  }
+}
+.flake1:nth-child(32) {
+  animation: r32 1s linear infinite;
+  animation-delay: -1280ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.46;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r32 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 4px;
+    left: 230px;
+    transform: rotateZ(635deg) scale(1);
+  }
+}
+.flake1:nth-child(33) {
+  animation: r33 1s linear infinite;
+  animation-delay: -1320ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r33 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 336px;
+    left: 351px;
+    transform: rotateZ(887deg) scale(1);
+  }
+}
+.flake1:nth-child(34) {
+  animation: r34 1s linear infinite;
+  animation-delay: -1360ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.77;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r34 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 134px;
+    left: 242px;
+    transform: rotateZ(600deg) scale(2);
+  }
+}
+.flake1:nth-child(35) {
+  animation: r35 1s linear infinite;
+  animation-delay: -1400ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.92;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r35 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 392px;
+    left: 289px;
+    transform: rotateZ(528deg) scale(2);
+  }
+}
+.flake1:nth-child(36) {
+  animation: r36 1s linear infinite;
+  animation-delay: -1440ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.22;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r36 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 138px;
+    left: 93px;
+    transform: rotateZ(112deg) scale(2);
+  }
+}
+.flake1:nth-child(37) {
+  animation: r37 1s linear infinite;
+  animation-delay: -1480ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.53;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r37 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 109px;
+    left: 268px;
+    transform: rotateZ(470deg) scale(1);
+  }
+}
+.flake1:nth-child(38) {
+  animation: r38 1s linear infinite;
+  animation-delay: -1520ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.27;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r38 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 2px;
+    left: 280px;
+    transform: rotateZ(239deg) scale(3);
+  }
+}
+.flake1:nth-child(39) {
+  animation: r39 1s linear infinite;
+  animation-delay: -1560ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.85;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r39 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 375px;
+    left: 58px;
+    transform: rotateZ(148deg) scale(2);
+  }
+}
+.flake1:nth-child(40) {
+  animation: r40 1s linear infinite;
+  animation-delay: -1600ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.77;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r40 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 345px;
+    left: 216px;
+    transform: rotateZ(770deg) scale(3);
+  }
+}
+.flake1:nth-child(41) {
+  animation: r41 1s linear infinite;
+  animation-delay: -1640ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.01;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r41 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 263px;
+    left: 369px;
+    transform: rotateZ(57deg) scale(2);
+  }
+}
+.flake1:nth-child(42) {
+  animation: r42 1s linear infinite;
+  animation-delay: -1680ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r42 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 294px;
+    left: 228px;
+    transform: rotateZ(140deg) scale(3);
+  }
+}
+.flake1:nth-child(43) {
+  animation: r43 1s linear infinite;
+  animation-delay: -1720ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.1;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r43 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 241px;
+    left: 256px;
+    transform: rotateZ(196deg) scale(3);
+  }
+}
+.flake1:nth-child(44) {
+  animation: r44 1s linear infinite;
+  animation-delay: -1760ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.17;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r44 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 260px;
+    left: 105px;
+    transform: rotateZ(607deg) scale(3);
+  }
+}
+.flake1:nth-child(45) {
+  animation: r45 1s linear infinite;
+  animation-delay: -1800ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.05;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r45 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 139px;
+    left: 145px;
+    transform: rotateZ(461deg) scale(1);
+  }
+}
+.flake1:nth-child(46) {
+  animation: r46 1s linear infinite;
+  animation-delay: -1840ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.29;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r46 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 143px;
+    left: 211px;
+    transform: rotateZ(189deg) scale(2);
+  }
+}
+.flake1:nth-child(47) {
+  animation: r47 1s linear infinite;
+  animation-delay: -1880ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.12;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r47 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 159px;
+    left: 136px;
+    transform: rotateZ(566deg) scale(1);
+  }
+}
+.flake1:nth-child(48) {
+  animation: r48 1s linear infinite;
+  animation-delay: -1920ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.58;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r48 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 103px;
+    left: 85px;
+    transform: rotateZ(270deg) scale(1);
+  }
+}
+.flake1:nth-child(49) {
+  animation: r49 1s linear infinite;
+  animation-delay: -1960ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.77;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r49 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 187px;
+    left: 22px;
+    transform: rotateZ(567deg) scale(3);
+  }
+}
+.flake1:nth-child(50) {
+  animation: r50 1s linear infinite;
+  animation-delay: -2000ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.93;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r50 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 365px;
+    left: 17px;
+    transform: rotateZ(54deg) scale(2);
+  }
+}
+.flake1:nth-child(51) {
+  animation: r51 1s linear infinite;
+  animation-delay: -2040ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.22;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r51 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 248px;
+    left: 373px;
+    transform: rotateZ(718deg) scale(2);
+  }
+}
+.flake1:nth-child(52) {
+  animation: r52 1s linear infinite;
+  animation-delay: -2080ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.57;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r52 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 233px;
+    left: 117px;
+    transform: rotateZ(9deg) scale(1);
+  }
+}
+.flake1:nth-child(53) {
+  animation: r53 1s linear infinite;
+  animation-delay: -2120ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.01;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r53 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 323px;
+    left: 363px;
+    transform: rotateZ(672deg) scale(2);
+  }
+}
+.flake1:nth-child(54) {
+  animation: r54 1s linear infinite;
+  animation-delay: -2160ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.96;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r54 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 291px;
+    left: 200px;
+    transform: rotateZ(400deg) scale(2);
+  }
+}
+.flake1:nth-child(55) {
+  animation: r55 1s linear infinite;
+  animation-delay: -2200ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.71;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r55 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 105px;
+    left: 227px;
+    transform: rotateZ(319deg) scale(2);
+  }
+}
+.flake1:nth-child(56) {
+  animation: r56 1s linear infinite;
+  animation-delay: -2240ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.45;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r56 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 71px;
+    left: 94px;
+    transform: rotateZ(364deg) scale(3);
+  }
+}
+.flake1:nth-child(57) {
+  animation: r57 1s linear infinite;
+  animation-delay: -2280ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.41;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r57 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+    left: 378px;
+    transform: rotateZ(598deg) scale(1);
+  }
+}
+.flake1:nth-child(58) {
+  animation: r58 1s linear infinite;
+  animation-delay: -2320ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.86;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r58 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 294px;
+    left: 29px;
+    transform: rotateZ(34deg) scale(3);
+  }
+}
+.flake1:nth-child(59) {
+  animation: r59 1s linear infinite;
+  animation-delay: -2360ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.88;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r59 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 265px;
+    left: 274px;
+    transform: rotateZ(601deg) scale(3);
+  }
+}
+.flake1:nth-child(60) {
+  animation: r60 1s linear infinite;
+  animation-delay: -2400ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.71;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r60 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 256px;
+    left: 52px;
+    transform: rotateZ(645deg) scale(1);
+  }
+}
+.flake1:nth-child(61) {
+  animation: r61 1s linear infinite;
+  animation-delay: -2440ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.74;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r61 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 25px;
+    left: 280px;
+    transform: rotateZ(15deg) scale(1);
+  }
+}
+.flake1:nth-child(62) {
+  animation: r62 1s linear infinite;
+  animation-delay: -2480ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.49;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r62 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 211px;
+    left: 25px;
+    transform: rotateZ(722deg) scale(2);
+  }
+}
+.flake1:nth-child(63) {
+  animation: r63 1s linear infinite;
+  animation-delay: -2520ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.28;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r63 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 51px;
+    left: 278px;
+    transform: rotateZ(661deg) scale(1);
+  }
+}
+.flake1:nth-child(64) {
+  animation: r64 1s linear infinite;
+  animation-delay: -2560ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.33;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r64 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 89px;
+    left: 296px;
+    transform: rotateZ(866deg) scale(1);
+  }
+}
+.flake1:nth-child(65) {
+  animation: r65 1s linear infinite;
+  animation-delay: -2600ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r65 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 238px;
+    left: 353px;
+    transform: rotateZ(523deg) scale(2);
+  }
+}
+.flake1:nth-child(66) {
+  animation: r66 1s linear infinite;
+  animation-delay: -2640ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.25;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r66 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 45px;
+    left: 359px;
+    transform: rotateZ(9deg) scale(3);
+  }
+}
+.flake1:nth-child(67) {
+  animation: r67 1s linear infinite;
+  animation-delay: -2680ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.35;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r67 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 228px;
+    left: 271px;
+    transform: rotateZ(265deg) scale(3);
+  }
+}
+.flake1:nth-child(68) {
+  animation: r68 1s linear infinite;
+  animation-delay: -2720ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.07;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r68 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 198px;
+    left: 324px;
+    transform: rotateZ(805deg) scale(3);
+  }
+}
+.flake1:nth-child(69) {
+  animation: r69 1s linear infinite;
+  animation-delay: -2760ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.01;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r69 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 390px;
+    left: 392px;
+    transform: rotateZ(429deg) scale(3);
+  }
+}
+.flake1:nth-child(70) {
+  animation: r70 1s linear infinite;
+  animation-delay: -2800ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r70 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 219px;
+    left: 243px;
+    transform: rotateZ(295deg) scale(2);
+  }
+}
+.flake1:nth-child(71) {
+  animation: r71 1s linear infinite;
+  animation-delay: -2840ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.36;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r71 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 314px;
+    left: 196px;
+    transform: rotateZ(402deg) scale(3);
+  }
+}
+.flake1:nth-child(72) {
+  animation: r72 1s linear infinite;
+  animation-delay: -2880ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.69;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r72 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 310px;
+    left: 329px;
+    transform: rotateZ(805deg) scale(2);
+  }
+}
+.flake1:nth-child(73) {
+  animation: r73 1s linear infinite;
+  animation-delay: -2920ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.56;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r73 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 249px;
+    left: 149px;
+    transform: rotateZ(648deg) scale(1);
+  }
+}
+.flake1:nth-child(74) {
+  animation: r74 1s linear infinite;
+  animation-delay: -2960ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.12;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r74 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 68px;
+    left: 393px;
+    transform: rotateZ(30deg) scale(2);
+  }
+}
+.flake1:nth-child(75) {
+  animation: r75 1s linear infinite;
+  animation-delay: -3000ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.01;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r75 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 376px;
+    left: 227px;
+    transform: rotateZ(195deg) scale(1);
+  }
+}
+.flake1:nth-child(76) {
+  animation: r76 1s linear infinite;
+  animation-delay: -3040ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.66;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r76 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 161px;
+    left: 36px;
+    transform: rotateZ(479deg) scale(1);
+  }
+}
+.flake1:nth-child(77) {
+  animation: r77 1s linear infinite;
+  animation-delay: -3080ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.29;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r77 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 385px;
+    left: 8px;
+    transform: rotateZ(275deg) scale(3);
+  }
+}
+.flake1:nth-child(78) {
+  animation: r78 1s linear infinite;
+  animation-delay: -3120ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.31;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r78 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 338px;
+    left: 384px;
+    transform: rotateZ(875deg) scale(2);
+  }
+}
+.flake1:nth-child(79) {
+  animation: r79 1s linear infinite;
+  animation-delay: -3160ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.91;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r79 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 344px;
+    left: 369px;
+    transform: rotateZ(768deg) scale(2);
+  }
+}
+.flake1:nth-child(80) {
+  animation: r80 1s linear infinite;
+  animation-delay: -3200ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.65;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r80 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 262px;
+    left: 70px;
+    transform: rotateZ(82deg) scale(2);
+  }
+}
+.flake1:nth-child(81) {
+  animation: r81 1s linear infinite;
+  animation-delay: -3240ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.07;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r81 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 227px;
+    left: 198px;
+    transform: rotateZ(353deg) scale(1);
+  }
+}
+.flake1:nth-child(82) {
+  animation: r82 1s linear infinite;
+  animation-delay: -3280ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.34;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r82 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 188px;
+    left: 25px;
+    transform: rotateZ(190deg) scale(2);
+  }
+}
+.flake1:nth-child(83) {
+  animation: r83 1s linear infinite;
+  animation-delay: -3320ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.98;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r83 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 243px;
+    left: 247px;
+    transform: rotateZ(202deg) scale(2);
+  }
+}
+.flake1:nth-child(84) {
+  animation: r84 1s linear infinite;
+  animation-delay: -3360ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.07;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r84 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 328px;
+    left: 352px;
+    transform: rotateZ(353deg) scale(2);
+  }
+}
+.flake1:nth-child(85) {
+  animation: r85 1s linear infinite;
+  animation-delay: -3400ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.79;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r85 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 113px;
+    left: 98px;
+    transform: rotateZ(111deg) scale(3);
+  }
+}
+.flake1:nth-child(86) {
+  animation: r86 1s linear infinite;
+  animation-delay: -3440ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.73;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r86 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 261px;
+    left: 241px;
+    transform: rotateZ(587deg) scale(2);
+  }
+}
+.flake1:nth-child(87) {
+  animation: r87 1s linear infinite;
+  animation-delay: -3480ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.97;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r87 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 33px;
+    left: 175px;
+    transform: rotateZ(810deg) scale(2);
+  }
+}
+.flake1:nth-child(88) {
+  animation: r88 1s linear infinite;
+  animation-delay: -3520ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.56;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r88 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 115px;
+    left: 235px;
+    transform: rotateZ(56deg) scale(1);
+  }
+}
+.flake1:nth-child(89) {
+  animation: r89 1s linear infinite;
+  animation-delay: -3560ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.99;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r89 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 66px;
+    left: 131px;
+    transform: rotateZ(900deg) scale(1);
+  }
+}
+.flake1:nth-child(90) {
+  animation: r90 1s linear infinite;
+  animation-delay: -3600ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.12;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r90 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 88px;
+    left: 154px;
+    transform: rotateZ(331deg) scale(2);
+  }
+}
+.flake1:nth-child(91) {
+  animation: r91 1s linear infinite;
+  animation-delay: -3640ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.05;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r91 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 12px;
+    left: 161px;
+    transform: rotateZ(794deg) scale(1);
+  }
+}
+.flake1:nth-child(92) {
+  animation: r92 1s linear infinite;
+  animation-delay: -3680ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.27;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r92 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 121px;
+    left: 84px;
+    transform: rotateZ(35deg) scale(1);
+  }
+}
+.flake1:nth-child(93) {
+  animation: r93 1s linear infinite;
+  animation-delay: -3720ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.67;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r93 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 315px;
+    left: 192px;
+    transform: rotateZ(680deg) scale(3);
+  }
+}
+.flake1:nth-child(94) {
+  animation: r94 1s linear infinite;
+  animation-delay: -3760ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.38;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r94 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 40px;
+    left: 100px;
+    transform: rotateZ(133deg) scale(1);
+  }
+}
+.flake1:nth-child(95) {
+  animation: r95 1s linear infinite;
+  animation-delay: -3800ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r95 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 182px;
+    left: 161px;
+    transform: rotateZ(793deg) scale(3);
+  }
+}
+.flake1:nth-child(96) {
+  animation: r96 1s linear infinite;
+  animation-delay: -3840ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.42;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r96 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 204px;
+    left: 347px;
+    transform: rotateZ(857deg) scale(3);
+  }
+}
+.flake1:nth-child(97) {
+  animation: r97 1s linear infinite;
+  animation-delay: -3880ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.82;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r97 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 304px;
+    left: 217px;
+    transform: rotateZ(10deg) scale(3);
+  }
+}
+.flake1:nth-child(98) {
+  animation: r98 1s linear infinite;
+  animation-delay: -3920ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r98 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 268px;
+    left: 263px;
+    transform: rotateZ(482deg) scale(3);
+  }
+}
+.flake1:nth-child(99) {
+  animation: r99 1s linear infinite;
+  animation-delay: -3960ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.21;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r99 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 240px;
+    left: 218px;
+    transform: rotateZ(110deg) scale(3);
+  }
+}
+.flake1:nth-child(100) {
+  animation: r100 1s linear infinite;
+  animation-delay: -4000ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r100 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 186px;
+    left: 315px;
+    transform: rotateZ(20deg) scale(1);
+  }
+}
+.flake1:nth-child(101) {
+  animation: r101 1s linear infinite;
+  animation-delay: -4040ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.93;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r101 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 49px;
+    left: 136px;
+    transform: rotateZ(98deg) scale(2);
+  }
+}
+.flake1:nth-child(102) {
+  animation: r102 1s linear infinite;
+  animation-delay: -4080ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.73;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r102 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 322px;
+    left: 261px;
+    transform: rotateZ(620deg) scale(1);
+  }
+}
+.flake1:nth-child(103) {
+  animation: r103 1s linear infinite;
+  animation-delay: -4120ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.51;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r103 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 191px;
+    left: 198px;
+    transform: rotateZ(329deg) scale(2);
+  }
+}
+.flake1:nth-child(104) {
+  animation: r104 1s linear infinite;
+  animation-delay: -4160ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.04;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r104 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 298px;
+    left: 278px;
+    transform: rotateZ(597deg) scale(1);
+  }
+}
+.flake1:nth-child(105) {
+  animation: r105 1s linear infinite;
+  animation-delay: -4200ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.9;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r105 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 207px;
+    left: 207px;
+    transform: rotateZ(736deg) scale(3);
+  }
+}
+.flake1:nth-child(106) {
+  animation: r106 1s linear infinite;
+  animation-delay: -4240ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.43;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r106 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 309px;
+    left: 342px;
+    transform: rotateZ(246deg) scale(1);
+  }
+}
+.flake1:nth-child(107) {
+  animation: r107 1s linear infinite;
+  animation-delay: -4280ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.9;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r107 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 117px;
+    left: 332px;
+    transform: rotateZ(698deg) scale(1);
+  }
+}
+.flake1:nth-child(108) {
+  animation: r108 1s linear infinite;
+  animation-delay: -4320ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.53;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r108 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 278px;
+    left: 162px;
+    transform: rotateZ(632deg) scale(3);
+  }
+}
+.flake1:nth-child(109) {
+  animation: r109 1s linear infinite;
+  animation-delay: -4360ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r109 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 394px;
+    left: 296px;
+    transform: rotateZ(150deg) scale(1);
+  }
+}
+.flake1:nth-child(110) {
+  animation: r110 1s linear infinite;
+  animation-delay: -4400ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.79;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r110 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 354px;
+    left: 157px;
+    transform: rotateZ(769deg) scale(2);
+  }
+}
+.flake1:nth-child(111) {
+  animation: r111 1s linear infinite;
+  animation-delay: -4440ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.66;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r111 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 75px;
+    left: 257px;
+    transform: rotateZ(344deg) scale(3);
+  }
+}
+.flake1:nth-child(112) {
+  animation: r112 1s linear infinite;
+  animation-delay: -4480ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r112 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 122px;
+    left: 194px;
+    transform: rotateZ(734deg) scale(1);
+  }
+}
+.flake1:nth-child(113) {
+  animation: r113 1s linear infinite;
+  animation-delay: -4520ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r113 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 195px;
+    left: 388px;
+    transform: rotateZ(371deg) scale(2);
+  }
+}
+.flake1:nth-child(114) {
+  animation: r114 1s linear infinite;
+  animation-delay: -4560ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.03;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r114 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 2px;
+    left: 84px;
+    transform: rotateZ(297deg) scale(2);
+  }
+}
+.flake1:nth-child(115) {
+  animation: r115 1s linear infinite;
+  animation-delay: -4600ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.61;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r115 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 107px;
+    left: 360px;
+    transform: rotateZ(885deg) scale(2);
+  }
+}
+.flake1:nth-child(116) {
+  animation: r116 1s linear infinite;
+  animation-delay: -4640ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.26;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r116 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 197px;
+    left: 264px;
+    transform: rotateZ(395deg) scale(2);
+  }
+}
+.flake1:nth-child(117) {
+  animation: r117 1s linear infinite;
+  animation-delay: -4680ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.57;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r117 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 107px;
+    left: 215px;
+    transform: rotateZ(229deg) scale(3);
+  }
+}
+.flake1:nth-child(118) {
+  animation: r118 1s linear infinite;
+  animation-delay: -4720ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.75;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r118 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 163px;
+    left: 276px;
+    transform: rotateZ(368deg) scale(3);
+  }
+}
+.flake1:nth-child(119) {
+  animation: r119 1s linear infinite;
+  animation-delay: -4760ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.9;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r119 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 121px;
+    left: 83px;
+    transform: rotateZ(829deg) scale(3);
+  }
+}
+.flake1:nth-child(120) {
+  animation: r120 1s linear infinite;
+  animation-delay: -4800ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r120 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 316px;
+    left: 118px;
+    transform: rotateZ(860deg) scale(1);
+  }
+}
+.flake1:nth-child(121) {
+  animation: r121 1s linear infinite;
+  animation-delay: -4840ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.59;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r121 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 5px;
+    left: 364px;
+    transform: rotateZ(689deg) scale(3);
+  }
+}
+.flake1:nth-child(122) {
+  animation: r122 1s linear infinite;
+  animation-delay: -4880ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r122 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 386px;
+    left: 212px;
+    transform: rotateZ(194deg) scale(3);
+  }
+}
+.flake1:nth-child(123) {
+  animation: r123 1s linear infinite;
+  animation-delay: -4920ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.45;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r123 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 73px;
+    left: 10px;
+    transform: rotateZ(851deg) scale(2);
+  }
+}
+.flake1:nth-child(124) {
+  animation: r124 1s linear infinite;
+  animation-delay: -4960ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.41;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r124 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 71px;
+    left: 377px;
+    transform: rotateZ(714deg) scale(2);
+  }
+}
+.flake1:nth-child(125) {
+  animation: r125 1s linear infinite;
+  animation-delay: -5000ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.4;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r125 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 307px;
+    left: 137px;
+    transform: rotateZ(681deg) scale(1);
+  }
+}
+.flake1:nth-child(126) {
+  animation: r126 1s linear infinite;
+  animation-delay: -5040ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.88;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r126 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 95px;
+    left: 377px;
+    transform: rotateZ(735deg) scale(3);
+  }
+}
+.flake1:nth-child(127) {
+  animation: r127 1s linear infinite;
+  animation-delay: -5080ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.34;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r127 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 358px;
+    left: 116px;
+    transform: rotateZ(399deg) scale(2);
+  }
+}
+.flake1:nth-child(128) {
+  animation: r128 1s linear infinite;
+  animation-delay: -5120ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.49;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r128 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 396px;
+    left: 130px;
+    transform: rotateZ(791deg) scale(2);
+  }
+}
+.flake1:nth-child(129) {
+  animation: r129 1s linear infinite;
+  animation-delay: -5160ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.99;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r129 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 148px;
+    left: 260px;
+    transform: rotateZ(582deg) scale(3);
+  }
+}
+.flake1:nth-child(130) {
+  animation: r130 1s linear infinite;
+  animation-delay: -5200ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.58;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r130 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 309px;
+    left: 251px;
+    transform: rotateZ(404deg) scale(1);
+  }
+}
+.flake1:nth-child(131) {
+  animation: r131 1s linear infinite;
+  animation-delay: -5240ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.49;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r131 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 384px;
+    left: 231px;
+    transform: rotateZ(676deg) scale(1);
+  }
+}
+.flake1:nth-child(132) {
+  animation: r132 1s linear infinite;
+  animation-delay: -5280ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.41;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r132 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 375px;
+    left: 253px;
+    transform: rotateZ(649deg) scale(2);
+  }
+}
+.flake1:nth-child(133) {
+  animation: r133 1s linear infinite;
+  animation-delay: -5320ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.1;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r133 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 216px;
+    left: 353px;
+    transform: rotateZ(714deg) scale(1);
+  }
+}
+.flake1:nth-child(134) {
+  animation: r134 1s linear infinite;
+  animation-delay: -5360ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r134 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 219px;
+    left: 297px;
+    transform: rotateZ(233deg) scale(3);
+  }
+}
+.flake1:nth-child(135) {
+  animation: r135 1s linear infinite;
+  animation-delay: -5400ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r135 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 106px;
+    left: 120px;
+    transform: rotateZ(697deg) scale(2);
+  }
+}
+.flake1:nth-child(136) {
+  animation: r136 1s linear infinite;
+  animation-delay: -5440ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.95;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r136 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 279px;
+    left: 7px;
+    transform: rotateZ(342deg) scale(3);
+  }
+}
+.flake1:nth-child(137) {
+  animation: r137 1s linear infinite;
+  animation-delay: -5480ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.69;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r137 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 171px;
+    left: 185px;
+    transform: rotateZ(359deg) scale(3);
+  }
+}
+.flake1:nth-child(138) {
+  animation: r138 1s linear infinite;
+  animation-delay: -5520ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.96;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r138 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 221px;
+    left: 135px;
+    transform: rotateZ(65deg) scale(2);
+  }
+}
+.flake1:nth-child(139) {
+  animation: r139 1s linear infinite;
+  animation-delay: -5560ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.99;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r139 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 300px;
+    left: 146px;
+    transform: rotateZ(156deg) scale(2);
+  }
+}
+.flake1:nth-child(140) {
+  animation: r140 1s linear infinite;
+  animation-delay: -5600ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r140 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 178px;
+    left: 61px;
+    transform: rotateZ(94deg) scale(2);
+  }
+}
+.flake1:nth-child(141) {
+  animation: r141 1s linear infinite;
+  animation-delay: -5640ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.77;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r141 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+    left: 100px;
+    transform: rotateZ(572deg) scale(2);
+  }
+}
+.flake1:nth-child(142) {
+  animation: r142 1s linear infinite;
+  animation-delay: -5680ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r142 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 210px;
+    left: 313px;
+    transform: rotateZ(619deg) scale(2);
+  }
+}
+.flake1:nth-child(143) {
+  animation: r143 1s linear infinite;
+  animation-delay: -5720ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.22;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r143 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 85px;
+    left: 214px;
+    transform: rotateZ(300deg) scale(1);
+  }
+}
+.flake1:nth-child(144) {
+  animation: r144 1s linear infinite;
+  animation-delay: -5760ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.32;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r144 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 60px;
+    left: 393px;
+    transform: rotateZ(439deg) scale(3);
+  }
+}
+.flake1:nth-child(145) {
+  animation: r145 1s linear infinite;
+  animation-delay: -5800ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.2;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r145 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 377px;
+    left: 175px;
+    transform: rotateZ(777deg) scale(2);
+  }
+}
+.flake1:nth-child(146) {
+  animation: r146 1s linear infinite;
+  animation-delay: -5840ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r146 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 366px;
+    left: 258px;
+    transform: rotateZ(329deg) scale(2);
+  }
+}
+.flake1:nth-child(147) {
+  animation: r147 1s linear infinite;
+  animation-delay: -5880ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.17;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r147 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 155px;
+    left: 350px;
+    transform: rotateZ(186deg) scale(3);
+  }
+}
+.flake1:nth-child(148) {
+  animation: r148 1s linear infinite;
+  animation-delay: -5920ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.82;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r148 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 201px;
+    left: 20px;
+    transform: rotateZ(1deg) scale(3);
+  }
+}
+.flake1:nth-child(149) {
+  animation: r149 1s linear infinite;
+  animation-delay: -5960ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.81;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r149 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 17px;
+    left: 126px;
+    transform: rotateZ(105deg) scale(1);
+  }
+}
+.flake1:nth-child(150) {
+  animation: r150 1s linear infinite;
+  animation-delay: -6000ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.72;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r150 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 295px;
+    left: 272px;
+    transform: rotateZ(77deg) scale(1);
+  }
+}
+.flake1:nth-child(151) {
+  animation: r151 1s linear infinite;
+  animation-delay: -6040ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.02;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r151 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 379px;
+    left: 145px;
+    transform: rotateZ(135deg) scale(1);
+  }
+}
+.flake1:nth-child(152) {
+  animation: r152 1s linear infinite;
+  animation-delay: -6080ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.11;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r152 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 72px;
+    left: 18px;
+    transform: rotateZ(812deg) scale(3);
+  }
+}
+.flake1:nth-child(153) {
+  animation: r153 1s linear infinite;
+  animation-delay: -6120ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.52;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r153 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 334px;
+    left: 48px;
+    transform: rotateZ(644deg) scale(2);
+  }
+}
+.flake1:nth-child(154) {
+  animation: r154 1s linear infinite;
+  animation-delay: -6160ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.69;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r154 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 304px;
+    left: 168px;
+    transform: rotateZ(485deg) scale(1);
+  }
+}
+.flake1:nth-child(155) {
+  animation: r155 1s linear infinite;
+  animation-delay: -6200ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.88;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r155 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 49px;
+    left: 218px;
+    transform: rotateZ(892deg) scale(3);
+  }
+}
+.flake1:nth-child(156) {
+  animation: r156 1s linear infinite;
+  animation-delay: -6240ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.39;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r156 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 86px;
+    left: 135px;
+    transform: rotateZ(617deg) scale(3);
+  }
+}
+.flake1:nth-child(157) {
+  animation: r157 1s linear infinite;
+  animation-delay: -6280ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.84;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r157 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 27px;
+    left: 257px;
+    transform: rotateZ(363deg) scale(1);
+  }
+}
+.flake1:nth-child(158) {
+  animation: r158 1s linear infinite;
+  animation-delay: -6320ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.01;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r158 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 144px;
+    left: 170px;
+    transform: rotateZ(37deg) scale(3);
+  }
+}
+.flake1:nth-child(159) {
+  animation: r159 1s linear infinite;
+  animation-delay: -6360ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.37;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r159 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 206px;
+    left: 204px;
+    transform: rotateZ(222deg) scale(2);
+  }
+}
+.flake1:nth-child(160) {
+  animation: r160 1s linear infinite;
+  animation-delay: -6400ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.56;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r160 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 243px;
+    left: 349px;
+    transform: rotateZ(11deg) scale(3);
+  }
+}
+.flake1:nth-child(161) {
+  animation: r161 1s linear infinite;
+  animation-delay: -6440ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.45;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r161 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 337px;
+    left: 111px;
+    transform: rotateZ(296deg) scale(1);
+  }
+}
+.flake1:nth-child(162) {
+  animation: r162 1s linear infinite;
+  animation-delay: -6480ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.98;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r162 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 227px;
+    left: 56px;
+    transform: rotateZ(732deg) scale(3);
+  }
+}
+.flake1:nth-child(163) {
+  animation: r163 1s linear infinite;
+  animation-delay: -6520ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.3;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r163 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 364px;
+    left: 177px;
+    transform: rotateZ(578deg) scale(1);
+  }
+}
+.flake1:nth-child(164) {
+  animation: r164 1s linear infinite;
+  animation-delay: -6560ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r164 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 384px;
+    left: 36px;
+    transform: rotateZ(688deg) scale(1);
+  }
+}
+.flake1:nth-child(165) {
+  animation: r165 1s linear infinite;
+  animation-delay: -6600ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.71;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r165 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 90px;
+    left: 274px;
+    transform: rotateZ(374deg) scale(3);
+  }
+}
+.flake1:nth-child(166) {
+  animation: r166 1s linear infinite;
+  animation-delay: -6640ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.78;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r166 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 199px;
+    left: 31px;
+    transform: rotateZ(344deg) scale(2);
+  }
+}
+.flake1:nth-child(167) {
+  animation: r167 1s linear infinite;
+  animation-delay: -6680ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.97;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r167 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 16px;
+    left: 362px;
+    transform: rotateZ(389deg) scale(3);
+  }
+}
+.flake1:nth-child(168) {
+  animation: r168 1s linear infinite;
+  animation-delay: -6720ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.57;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r168 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 358px;
+    left: 242px;
+    transform: rotateZ(433deg) scale(2);
+  }
+}
+.flake1:nth-child(169) {
+  animation: r169 1s linear infinite;
+  animation-delay: -6760ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.59;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r169 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 50px;
+    left: 347px;
+    transform: rotateZ(41deg) scale(2);
+  }
+}
+.flake1:nth-child(170) {
+  animation: r170 1s linear infinite;
+  animation-delay: -6800ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.86;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r170 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 16px;
+    left: 296px;
+    transform: rotateZ(609deg) scale(2);
+  }
+}
+.flake1:nth-child(171) {
+  animation: r171 1s linear infinite;
+  animation-delay: -6840ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r171 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 183px;
+    left: 74px;
+    transform: rotateZ(654deg) scale(1);
+  }
+}
+.flake1:nth-child(172) {
+  animation: r172 1s linear infinite;
+  animation-delay: -6880ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.05;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r172 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 30px;
+    left: 156px;
+    transform: rotateZ(156deg) scale(2);
+  }
+}
+.flake1:nth-child(173) {
+  animation: r173 1s linear infinite;
+  animation-delay: -6920ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.65;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r173 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 247px;
+    left: 7px;
+    transform: rotateZ(355deg) scale(3);
+  }
+}
+.flake1:nth-child(174) {
+  animation: r174 1s linear infinite;
+  animation-delay: -6960ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r174 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 350px;
+    left: 157px;
+    transform: rotateZ(246deg) scale(3);
+  }
+}
+.flake1:nth-child(175) {
+  animation: r175 1s linear infinite;
+  animation-delay: -7000ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.8;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r175 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 156px;
+    left: 11px;
+    transform: rotateZ(198deg) scale(3);
+  }
+}
+.flake1:nth-child(176) {
+  animation: r176 1s linear infinite;
+  animation-delay: -7040ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.41;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r176 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 323px;
+    left: 292px;
+    transform: rotateZ(182deg) scale(3);
+  }
+}
+.flake1:nth-child(177) {
+  animation: r177 1s linear infinite;
+  animation-delay: -7080ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.79;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r177 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 259px;
+    left: 132px;
+    transform: rotateZ(414deg) scale(1);
+  }
+}
+.flake1:nth-child(178) {
+  animation: r178 1s linear infinite;
+  animation-delay: -7120ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.95;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r178 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 243px;
+    left: 52px;
+    transform: rotateZ(253deg) scale(2);
+  }
+}
+.flake1:nth-child(179) {
+  animation: r179 1s linear infinite;
+  animation-delay: -7160ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.87;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r179 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 24px;
+    left: 28px;
+    transform: rotateZ(417deg) scale(3);
+  }
+}
+.flake1:nth-child(180) {
+  animation: r180 1s linear infinite;
+  animation-delay: -7200ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.3;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r180 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 111px;
+    left: 302px;
+    transform: rotateZ(802deg) scale(2);
+  }
+}
+.flake1:nth-child(181) {
+  animation: r181 1s linear infinite;
+  animation-delay: -7240ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.25;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r181 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 51px;
+    left: 100px;
+    transform: rotateZ(858deg) scale(3);
+  }
+}
+.flake1:nth-child(182) {
+  animation: r182 1s linear infinite;
+  animation-delay: -7280ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.79;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r182 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 191px;
+    left: 70px;
+    transform: rotateZ(138deg) scale(2);
+  }
+}
+.flake1:nth-child(183) {
+  animation: r183 1s linear infinite;
+  animation-delay: -7320ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.66;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r183 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 51px;
+    left: 91px;
+    transform: rotateZ(520deg) scale(1);
+  }
+}
+.flake1:nth-child(184) {
+  animation: r184 1s linear infinite;
+  animation-delay: -7360ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.12;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r184 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 243px;
+    left: 243px;
+    transform: rotateZ(54deg) scale(1);
+  }
+}
+.flake1:nth-child(185) {
+  animation: r185 1s linear infinite;
+  animation-delay: -7400ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.54;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r185 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 70px;
+    left: 215px;
+    transform: rotateZ(358deg) scale(1);
+  }
+}
+.flake1:nth-child(186) {
+  animation: r186 1s linear infinite;
+  animation-delay: -7440ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.88;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r186 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 372px;
+    left: 271px;
+    transform: rotateZ(419deg) scale(2);
+  }
+}
+.flake1:nth-child(187) {
+  animation: r187 1s linear infinite;
+  animation-delay: -7480ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.92;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r187 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 292px;
+    left: 268px;
+    transform: rotateZ(59deg) scale(2);
+  }
+}
+.flake1:nth-child(188) {
+  animation: r188 1s linear infinite;
+  animation-delay: -7520ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.13;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r188 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 103px;
+    left: 324px;
+    transform: rotateZ(633deg) scale(1);
+  }
+}
+.flake1:nth-child(189) {
+  animation: r189 1s linear infinite;
+  animation-delay: -7560ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.34;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r189 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 84px;
+    left: 56px;
+    transform: rotateZ(623deg) scale(2);
+  }
+}
+.flake1:nth-child(190) {
+  animation: r190 1s linear infinite;
+  animation-delay: -7600ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.88;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r190 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 297px;
+    left: 102px;
+    transform: rotateZ(477deg) scale(3);
+  }
+}
+.flake1:nth-child(191) {
+  animation: r191 1s linear infinite;
+  animation-delay: -7640ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.24;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r191 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 372px;
+    left: 51px;
+    transform: rotateZ(536deg) scale(3);
+  }
+}
+.flake1:nth-child(192) {
+  animation: r192 1s linear infinite;
+  animation-delay: -7680ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.06;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r192 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 10px;
+    left: 338px;
+    transform: rotateZ(550deg) scale(2);
+  }
+}
+.flake1:nth-child(193) {
+  animation: r193 1s linear infinite;
+  animation-delay: -7720ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.69;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r193 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 266px;
+    left: 19px;
+    transform: rotateZ(809deg) scale(3);
+  }
+}
+.flake1:nth-child(194) {
+  animation: r194 1s linear infinite;
+  animation-delay: -7760ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.68;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r194 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 238px;
+    left: 168px;
+    transform: rotateZ(106deg) scale(2);
+  }
+}
+.flake1:nth-child(195) {
+  animation: r195 1s linear infinite;
+  animation-delay: -7800ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.67;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r195 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 195px;
+    left: 231px;
+    transform: rotateZ(806deg) scale(3);
+  }
+}
+.flake1:nth-child(196) {
+  animation: r196 1s linear infinite;
+  animation-delay: -7840ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.15;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r196 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 118px;
+    left: 81px;
+    transform: rotateZ(611deg) scale(2);
+  }
+}
+.flake1:nth-child(197) {
+  animation: r197 1s linear infinite;
+  animation-delay: -7880ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.32;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r197 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 15px;
+    left: 77px;
+    transform: rotateZ(751deg) scale(3);
+  }
+}
+.flake1:nth-child(198) {
+  animation: r198 1s linear infinite;
+  animation-delay: -7920ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.58;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r198 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 241px;
+    left: 263px;
+    transform: rotateZ(423deg) scale(2);
+  }
+}
+.flake1:nth-child(199) {
+  animation: r199 1s linear infinite;
+  animation-delay: -7960ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.5;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r199 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 36px;
+    left: 334px;
+    transform: rotateZ(448deg) scale(3);
+  }
+}
+.flake1:nth-child(200) {
+  animation: r200 1s linear infinite;
+  animation-delay: -8000ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.94;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r200 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 143px;
+    left: 350px;
+    transform: rotateZ(235deg) scale(1);
+  }
+}
+.flake1:nth-child(201) {
+  animation: r201 1s linear infinite;
+  animation-delay: -8040ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 1;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r201 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 207px;
+    left: 216px;
+    transform: rotateZ(237deg) scale(2);
+  }
+}
+.flake1:nth-child(202) {
+  animation: r202 1s linear infinite;
+  animation-delay: -8080ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.96;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r202 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 346px;
+    left: 252px;
+    transform: rotateZ(262deg) scale(1);
+  }
+}
+.flake1:nth-child(203) {
+  animation: r203 1s linear infinite;
+  animation-delay: -8120ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.98;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r203 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 20px;
+    left: 182px;
+    transform: rotateZ(363deg) scale(3);
+  }
+}
+.flake1:nth-child(204) {
+  animation: r204 1s linear infinite;
+  animation-delay: -8160ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.44;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r204 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 89px;
+    left: 194px;
+    transform: rotateZ(806deg) scale(2);
+  }
+}
+.flake1:nth-child(205) {
+  animation: r205 1s linear infinite;
+  animation-delay: -8200ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.47;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r205 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 393px;
+    left: 99px;
+    transform: rotateZ(858deg) scale(3);
+  }
+}
+.flake1:nth-child(206) {
+  animation: r206 1s linear infinite;
+  animation-delay: -8240ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.41;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r206 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 227px;
+    left: 31px;
+    transform: rotateZ(272deg) scale(2);
+  }
+}
+.flake1:nth-child(207) {
+  animation: r207 1s linear infinite;
+  animation-delay: -8280ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.56;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r207 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 272px;
+    left: 84px;
+    transform: rotateZ(435deg) scale(3);
+  }
+}
+.flake1:nth-child(208) {
+  animation: r208 1s linear infinite;
+  animation-delay: -8320ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.53;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r208 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 349px;
+    left: 302px;
+    transform: rotateZ(740deg) scale(1);
+  }
+}
+.flake1:nth-child(209) {
+  animation: r209 1s linear infinite;
+  animation-delay: -8360ms;
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.32;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r209 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 26px;
+    left: 360px;
+    transform: rotateZ(66deg) scale(2);
+  }
+}
+.flake1:nth-child(210) {
+  animation: r210 1s linear infinite;
+  animation-delay: -8400ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.19;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r210 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 319px;
+    left: 200px;
+    transform: rotateZ(127deg) scale(3);
+  }
+}
+.flake1:nth-child(211) {
+  animation: r211 1s linear infinite;
+  animation-delay: -8440ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.27;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r211 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 294px;
+    left: 293px;
+    transform: rotateZ(579deg) scale(1);
+  }
+}
+.flake1:nth-child(212) {
+  animation: r212 1s linear infinite;
+  animation-delay: -8480ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.99;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r212 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 71px;
+    left: 154px;
+    transform: rotateZ(551deg) scale(1);
+  }
+}
+.flake1:nth-child(213) {
+  animation: r213 1s linear infinite;
+  animation-delay: -8520ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.05;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r213 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 219px;
+    left: 40px;
+    transform: rotateZ(447deg) scale(3);
+  }
+}
+.flake1:nth-child(214) {
+  animation: r214 1s linear infinite;
+  animation-delay: -8560ms;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.12;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r214 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 235px;
+    left: 322px;
+    transform: rotateZ(145deg) scale(1);
+  }
+}
+.flake1:nth-child(215) {
+  animation: r215 1s linear infinite;
+  animation-delay: -8600ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.79;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r215 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 369px;
+    left: 344px;
+    transform: rotateZ(117deg) scale(3);
+  }
+}
+.flake1:nth-child(216) {
+  animation: r216 1s linear infinite;
+  animation-delay: -8640ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.23;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r216 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 66px;
+    left: 110px;
+    transform: rotateZ(85deg) scale(2);
+  }
+}
+.flake1:nth-child(217) {
+  animation: r217 1s linear infinite;
+  animation-delay: -8680ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.95;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r217 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 250px;
+    left: 113px;
+    transform: rotateZ(508deg) scale(1);
+  }
+}
+.flake1:nth-child(218) {
+  animation: r218 1s linear infinite;
+  animation-delay: -8720ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.67;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r218 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 16px;
+    left: 52px;
+    transform: rotateZ(614deg) scale(1);
+  }
+}
+.flake1:nth-child(219) {
+  animation: r219 1s linear infinite;
+  animation-delay: -8760ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.33;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r219 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 316px;
+    left: 80px;
+    transform: rotateZ(249deg) scale(1);
+  }
+}
+.flake1:nth-child(220) {
+  animation: r220 1s linear infinite;
+  animation-delay: -8800ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.89;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r220 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 336px;
+    left: 130px;
+    transform: rotateZ(549deg) scale(3);
+  }
+}
+.flake1:nth-child(221) {
+  animation: r221 1s linear infinite;
+  animation-delay: -8840ms;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.21;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r221 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 297px;
+    left: 387px;
+    transform: rotateZ(80deg) scale(3);
+  }
+}
+.flake1:nth-child(222) {
+  animation: r222 1s linear infinite;
+  animation-delay: -8880ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.89;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r222 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 71px;
+    left: 354px;
+    transform: rotateZ(737deg) scale(1);
+  }
+}
+.flake1:nth-child(223) {
+  animation: r223 1s linear infinite;
+  animation-delay: -8920ms;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.33;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r223 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 138px;
+    left: 142px;
+    transform: rotateZ(94deg) scale(1);
+  }
+}
+.flake1:nth-child(224) {
+  animation: r224 1s linear infinite;
+  animation-delay: -8960ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.34;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r224 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 8px;
+    left: 3px;
+    transform: rotateZ(656deg) scale(2);
+  }
+}
+.flake1:nth-child(225) {
+  animation: r225 1s linear infinite;
+  animation-delay: -9000ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.57;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r225 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 104px;
+    left: 327px;
+    transform: rotateZ(455deg) scale(2);
+  }
+}
+.flake1:nth-child(226) {
+  animation: r226 1s linear infinite;
+  animation-delay: -9040ms;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.2;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r226 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 71px;
+    left: 117px;
+    transform: rotateZ(564deg) scale(1);
+  }
+}
+.flake1:nth-child(227) {
+  animation: r227 1s linear infinite;
+  animation-delay: -9080ms;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.34;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r227 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 112px;
+    left: 386px;
+    transform: rotateZ(169deg) scale(3);
+  }
+}
+.flake1:nth-child(228) {
+  animation: r228 1s linear infinite;
+  animation-delay: -9120ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.46;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r228 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 109px;
+    left: 272px;
+    transform: rotateZ(438deg) scale(2);
+  }
+}
+.flake1:nth-child(229) {
+  animation: r229 1s linear infinite;
+  animation-delay: -9160ms;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.17;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r229 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 154px;
+    left: 207px;
+    transform: rotateZ(521deg) scale(1);
+  }
+}
+.flake1:nth-child(230) {
+  animation: r230 1s linear infinite;
+  animation-delay: -9200ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.44;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r230 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 243px;
+    left: 342px;
+    transform: rotateZ(219deg) scale(3);
+  }
+}
+.flake1:nth-child(231) {
+  animation: r231 1s linear infinite;
+  animation-delay: -9240ms;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.08;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r231 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 24px;
+    left: 111px;
+    transform: rotateZ(214deg) scale(1);
+  }
+}
+.flake1:nth-child(232) {
+  animation: r232 1s linear infinite;
+  animation-delay: -9280ms;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.94;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r232 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 300px;
+    left: 73px;
+    transform: rotateZ(76deg) scale(3);
+  }
+}
+.flake1:nth-child(233) {
+  animation: r233 1s linear infinite;
+  animation-delay: -9320ms;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.38;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r233 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 359px;
+    left: 19px;
+    transform: rotateZ(850deg) scale(1);
+  }
+}
+.flake1:nth-child(234) {
+  animation: r234 1s linear infinite;
+  animation-delay: -9360ms;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.61;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r234 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 263px;
+    left: 376px;
+    transform: rotateZ(259deg) scale(3);
+  }
+}
+.flake1:nth-child(235) {
+  animation: r235 1s linear infinite;
+  animation-delay: -9400ms;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.8;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r235 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 297px;
+    left: 173px;
+    transform: rotateZ(496deg) scale(2);
+  }
+}
+.flake1:nth-child(236) {
+  animation: r236 1s linear infinite;
+  animation-delay: -9440ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.25;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r236 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 259px;
+    left: 280px;
+    transform: rotateZ(639deg) scale(2);
+  }
+}
+.flake1:nth-child(237) {
+  animation: r237 1s linear infinite;
+  animation-delay: -9480ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.42;
+  background-image: url("http://www.stezzer.com/images/star1.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r237 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 278px;
+    left: 205px;
+    transform: rotateZ(379deg) scale(1);
+  }
+}
+.flake1:nth-child(238) {
+  animation: r238 1s linear infinite;
+  animation-delay: -9520ms;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.67;
+  background-image: url("http://www.stezzer.com/images/star3.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r238 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 273px;
+    left: 88px;
+    transform: rotateZ(611deg) scale(1);
+  }
+}
+.flake1:nth-child(239) {
+  animation: r239 1s linear infinite;
+  animation-delay: -9560ms;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.21;
+  background-image: url("http://www.stezzer.com/images/star2.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r239 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 233px;
+    left: 360px;
+    transform: rotateZ(485deg) scale(1);
+  }
+}
+.flake1:nth-child(240) {
+  animation: r240 1s linear infinite;
+  animation-delay: -9600ms;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 120px;
+  opacity: 0.49;
+  background-image: url("http://www.stezzer.com/images/star0.png");
+  /*select a random flake from files star0.png, star1.png or star2.png */
+}
+@keyframes r240 {
+  0% {
+    opacity: 0;
+    top: 200px;
+    /* start at center */
+    left: 200px;
+    /* start at center */
+    transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    opacity: 1;
+    top: 377px;
+    left: 30px;
+    transform: rotateZ(750deg) scale(3);
+  }
+}

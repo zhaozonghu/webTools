@@ -1,0 +1,77 @@
+$pos: 200px;
+$opacity: 1;
+
+@import url("https://fonts.googleapis.com/css?family=Damion");
+
+html {
+  background: black;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  background: #000;
+}
+
+.hosay {
+  opacity: .65;
+  font-family: 'Damion';
+  position: absolute;
+  top: 147px;
+  left: 155px;
+  width: 90px;
+  height: 20px;
+  font-size: 40px;
+  padding: 4px 0 0 0;
+  text-shadow: 0 0 1px #444;
+  text-align: center;
+  z-index: 5;
+  color: white;
+}
+
+.flake1 {
+  @for $i from 1 through 240 {
+    &:nth-child(#{$i}) {
+      $fall: random(1);
+      $fall1: random(1, 50);
+      animation: r+($i) 0s+$fall linear infinite;
+      animation-delay: -$i*40ms;
+      $opacity: (random(100)/100);
+      $size: (random(15)*1px)+1;
+      width: $size;
+      height: $size;
+      position: absolute;
+      left: 120px;
+      opacity: $opacity;
+      $flakenum1: (random(0, 3));
+      background-image: url("http://www.stezzer.com/images/star" + $flakenum1 + ".png"); /*select a random flake from files star0.png, star1.png or star2.png */
+      $xpos: (200px);
+      $deg: (random(900)*1deg);
+      $windx: (random(0, 400)*1px);
+      $windy: (random(0, 400)*1px);
+
+      @keyframes r#{$i} {
+        $scaler: random(1, 3);
+        0% {
+          opacity: 0;
+          top: 200px;    /* start at center */
+          left: 200px;  /* start at center */
+          transform: rotateZ(0deg) scale(1);
+        }
+        100% {
+          opacity: 1;
+          top: $windx;
+          left: $windy;
+          transform: rotateZ($deg) scale($scaler);
+        }
+      }
+    }
+  }
+}
