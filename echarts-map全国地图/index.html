@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度图标插件-地图</title>
+    <style>
+        .map {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: none;
+            padding: 10px 10px 20px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map" id="china_map"></div>
+    <div class="map" id="proe_map"></div>
+    <div class="map" id="city_map"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/macarons.js"></script>
+    <script>
+        // 设定series是一个空的数组
+        var series = [], convertData;
+        // 请求的方式获取
+        $.get("json/china.json", function (as) {
+            $('#china_map').show();
+            // 引入china地区地图
+            echarts.registerMap('中国', as);
+            // 每个地区的坐标
+            var geoCoordMap = {
+                '四川': [102.994271, 30.641549],
+                '广东': [114.507943, 23.487278],
+                '浙江': [120.210575, 28.894515]
+            };
+
+            // 每个地区的设备数量值
+            var data = [{
+                name: '浙江',
+                value: 119
+            }, {
+                name: '四川',
+                value: 520
+            }, {
+                name: '广东',
+                value: 300
+            }];
+
+            // 每个地区的设备告警数量
+            var data2 = [{
+                name: '浙江',
+                value: 119
+            }, {
+                name: '四川',
+                value: 520
+            }, {
+                name: '广东',
+                value: 300
+            }]
+
+            setPoint('中国', data, data2, geoCoordMap);
+            option = {
+                backgroundColor: '#4f5555',
+                title: {
+                    text: '中国设备部署图',
+                    subtext: '散点圆的大小随设备数量改变而改变',
+                    left: 'center',
+                    textStyle: {
+                        color: '#7bbfea'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: function (params) {
+                        if (typeof (params.data.value) != 'undefined') {
+                            return params.name + ' : ' + params.value;
+                        }
+                    }
+                },
+                visualMap: {
+                    min: 0,
+                    max: 500,
+                    text: ['违章企业'],
+                    realtime: false,
+                    calculable: true,
+                    inRange: {
+                        color: ['rgb(89, 196, 230)', 'rgb(147, 183, 227)', 'rgb(237, 175, 218)', 'rgb(193, 46, 52)']
+                    },
+                    outOfRange: {
+                        areaColor: '#323c48',
+                        borderColor: '#111'
+                    },
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                geo: {
+                    map: '中国',
+                    label: {
+                        textStyle: {
+                            fontSize: '.1rem',
+                        }
+                    }
+                },
+                series: series
+            };
+            var myChart = echarts.init(document.getElementById('china_map'));
+            myChart.setOption(option);
+            myChart.on('click', function (params) {
+                var selectProe = params.name;
+                //引入省份地图
+                $.get('json/' + selectProe + '/' + selectProe + '.json', function (as) {
+                    $('#proe_map').show();
+                    echarts.registerMap(selectProe, as);
+                    // 每个地区的坐标
+                    var geoCoordMapProe = {
+                        '杭州市': [120.018795, 30.140286],
+                        '宁波市': [121.605839, 29.870949]
+                    };
+
+                    // 每个地区的设备数量值
+                    var dataProe = [{
+                        name: '杭州市',
+                        value: 352
+                    }, {
+                        name: '宁波市',
+                        value: 119
+                    }];
+
+                    // 每个地区的设备告警数量
+                    var dataProe2 = [{
+                        name: '杭州市',
+                        value: 352
+                    }, {
+                        name: '宁波市',
+                        value: 119
+                    }]
+
+                    setPoint(selectProe, dataProe, dataProe2, geoCoordMapProe);
+                    var myChartProe = echarts.init(document.getElementById('proe_map'));
+                    myChartProe.setOption(
+                        {
+                            backgroundColor: '#4f5555',
+                            title: {
+                                text: selectProe + '设备部署图',
+                                subtext: '散点圆的大小随设备数量改变而改变',
+                                left: 'center',
+                                textStyle: {
+                                    color: '#7bbfea'
+                                }
+                            },
+                            geo: {
+                                map: selectProe,
+                                label: {
+                                    normal: {
+                                        show: true,
+                                        textStyle: {
+                                            color: '#fff',
+                                            fontSize: 12
+                                        },
+                                    },
+                                    emphasis: {
+                                        textStyle: {
+                                            color: '#7bbfea',
+                                            fontSize: 12
+                                        },
+                                    }
+
+                                },
+                                itemStyle: {
+                                    normal: {
+                                        areaColor: '#323c48',
+                                        borderColor: '#111'
+                                    },
+                                    emphasis: {
+                                        areaColor: '#2a333d'
+                                    }
+                                }
+                            },
+                            series: series
+                        }
+                    );
+                    myChartProe.on('click', function (rel) {
+                        var selectCity = rel.name;
+                        //引入城市地图
+                        $.get('json/' + selectProe + '/' + selectCity + '.json', function (Citymap) {
+                            $('#city_map').show();
+                            echarts.registerMap(selectCity, Citymap);
+                            var geoCoordMapCity = {
+                                '象山县': [121.892857, 29.42458],
+                                '鄞州区': [121.490483, 29.813772]
+                            };
+
+                            // 每个地区的设备数量值
+                            var dataCity = [{
+                                name: '象山县',
+                                value: 119
+                            }, {
+                                name: '鄞州区',
+                                value: 520
+                            }];
+
+                            // 每个地区的设备告警数量
+                            var dataCity2 = [{
+                                name: '象山县',
+                                value: 119
+                            }, {
+                                name: '鄞州区',
+                                value: 520
+                            }]
+
+                            setPoint(selectCity, dataCity, dataCity2, geoCoordMapCity);
+
+                            var myChartCity = echarts.init(document.getElementById('city_map'));
+                            myChartCity.setOption(
+                                {
+                                    backgroundColor: '#4f5555',
+                                    title: {
+                                        text: selectCity + '设备部署图',
+                                        subtext: '散点圆的大小随设备数量改变而改变',
+                                        left: 'center',
+                                        textStyle: {
+                                            color: '#7bbfea'
+                                        }
+                                    },
+                                    geo: {
+                                        map: selectCity,
+                                        label: {
+                                            normal: {
+                                                show: true,
+                                                textStyle: {
+                                                    color: '#fff',
+                                                    fontSize: 12
+                                                },
+                                            },
+                                            emphasis: {
+                                                textStyle: {
+                                                    color: '#7bbfea',
+                                                    fontSize: 12
+                                                },
+                                            }
+
+                                        },
+                                        itemStyle: {
+                                            normal: {
+                                                areaColor: '#323c48',
+                                                borderColor: '#111'
+                                            },
+                                            emphasis: {
+                                                areaColor: '#2a333d'
+                                            }
+                                        }
+                                    },
+                                    series: series
+                                }
+                            );
+                        });
+                    })
+                });
+            })
+
+        });
+        function setPoint(mapName, data, data2, geoCoordMap) {
+            series = [];
+            convertData = function (data) {
+                var res = [];
+                for (var i = 0; i < data.length; i++) {
+                    var geoCoord = geoCoordMap[data[i].name];
+                    if (geoCoord) {
+                        res.push({
+                            name: data[i].name,
+                            value: geoCoord.concat(data[i].value),
+                        });
+                    }
+                }
+                // 有数据的地区的名称和value值
+                return res;
+            };
+            [
+                [mapName, data]
+            ].forEach(function (item, i) {
+                series.push({
+                    name: '定位点',
+                    type: 'effectScatter', // 散点图
+                    coordinateSystem: 'geo', // 使用地理坐标系
+                    rippleEffect: {
+                        period: 4,
+                        brushType: 'stroke',
+                        scale: 3
+                    },
+                    data: convertData(item[1]),
+                    symbolSize: function (val) {
+                        if (val[2] <= 100) {
+                            return 4
+                        }
+                        if (val[2] > 100 && val[2] <= 200) {
+                            return 8
+                        }
+                        if (val[2] > 200 && val[2] <= 300) {
+                            return 12
+                        }
+                        if (val[2] > 300 && val[2] <= 400) {
+                            return 16
+                        }
+                        if (val[2] > 400 && val[2] <= 500) {
+                            return 20
+                        }
+                        if (val[2] > 500) {
+                            return 24
+                        }
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#5599E4',
+                        }
+                    },
+                    zlevel: 1,
+                }, {
+                        type: 'map',
+                        map: mapName,
+                        zlevel: 0,
+                        itemStyle: {
+                            normal: {
+                                areaColor: '#323c48',
+                                borderColor: '#111'
+                            },
+                            emphasis: {
+                                areaColor: '#2a333d'
+                            }
+                        },
+                        label: {
+                            normal: {
+                                show: true,
+                                textStyle: {
+                                    color: '#fff',
+                                    fontSize: 12
+                                },
+                            },
+                            emphasis: {
+                                textStyle: {
+                                    color: '#7bbfea',
+                                    fontSize: 12
+                                },
+                            }
+
+                        },
+                        data: data
+                    }, {
+                        name: '点',
+                        type: 'scatter',
+                        coordinateSystem: 'geo',
+                        symbol: 'pin',
+                        symbolSize: 32,
+                        label: {
+                            normal: {
+                                show: true,
+                                textStyle: {
+                                    color: '#fff',
+                                    fontSize: 9,
+                                }
+                            }
+                        },
+                        itemStyle: {
+                            normal: {
+                                color: '#F62157', //标志颜色
+                            }
+                        },
+                        zlevel: 6,
+                        data: convertData(data2)
+                    });
+            });
+        }
+    </script>
+</body>
+
+</html>

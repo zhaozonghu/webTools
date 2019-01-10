@@ -1,0 +1,37 @@
+var screenchange = {
+    width: 1334,//Éè¼Æ¸å¿í¶È
+    resize: function () {
+        var html = document.documentElement;
+        var w = html.clientWidth, h = html.clientHeight;
+        if (this.w != w || this.h != h) {
+            if (h < w) {//ºáÆÁ
+                html.style.fontSize = w / this.width * 100 + "px";
+                $wrap.css({ "width": w, "height": h, "transform": "none" });
+                height = h;
+                zoom = w / this.width;
+            } else {//ÊúÆÁ
+                html.style.fontSize = h / this.width * 100 + "px";
+                $wrap.css({ "width": h, "height": w, "transform": "rotate(90deg) translate3d(0," + -w + "px,0)" });
+                height = w;
+                zoom = h / this.width;
+            }
+            this.w = w;
+            this.h = h;
+        }
+    },
+    set: null,
+    fn: function () {
+        var self = screenchange;
+        clearTimeout(self.set);
+        self.resize();
+        self.set = setTimeout(
+            function () {
+                self.resize();
+            }, 300);
+    },
+    init: function () {
+        window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", this.fn, false);
+        this.fn();
+    }
+}
+screenchange.init();
