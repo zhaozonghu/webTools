@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>花瓣飘落</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        .kv-bg,#kv-canvas{overflow: hidden;position:absolute;left:0;top:0;width:100%;height:100%;background-repeat:no-repeat;background-position:center top;}
+#kv-canvas {height: 600px;}
+    </style>
+</head>
+
+<body>
+    <div class="kv-bg" style="background-image:url(images/bg.jpg);">
+    </div>
+
+    <div class="valent_wrap" id="kv-canvas"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/snowfall.jquery.js"></script>
+    <script src="js/flowerfall.js"></script>
+</body>
+
+</html>

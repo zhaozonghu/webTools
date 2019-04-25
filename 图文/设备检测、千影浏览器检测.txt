@@ -20,3 +20,13 @@ function checkQyingBrowser(){
     }
     return false;
 };
+
+//QQÄÚÖÃä¯ÀÀÆ÷ÅÐ¶Ï
+isQQ: function () {
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.indexOf('qq')>-1 && ua.indexOf('mqqbrowser') == -1) {
+		return true;
+	} else {
+		return false;
+	}
+}
