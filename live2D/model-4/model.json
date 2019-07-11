@@ -1,0 +1,10 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "model",
+	"model": "model.moc",
+	"textures": [
+		"textures/texture_00.png"
+	],
+	"motions":{
+	}
+}

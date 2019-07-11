@@ -1,0 +1,39 @@
+{
+	"version":"Test 0.0.1",
+	"model":"/model.moc",
+	"textures":[
+		"textures/texture_00.png",
+		"textures/texture_01.png"
+	],
+	"motions":{
+		
+	},
+	"layout":{
+		"center_x":0.0,
+		"center_y":-0.05,
+		"width":2.0
+	},
+	"hit_areas_custom":{
+		"head_x":[-0.35, 0.3],
+		"head_y":[0.4, 0.6],
+		"body_x":[-0.6, 0.6],
+		"body_y":[0.4, -0.9]
+	},
+	"motion_settings":
+	{
+		"idle":{"cd":0},
+		"morning":{"cd":3600},
+		"afternoon":{"cd":3600},
+		"evening":{"cd":3600},
+		"activity":{"cd":3600},
+		"friend":{"cd":18000},
+		"mail":{"cd":18000},
+		"tap_breast":{"cd":10},
+		"tap_belly":{"cd":10},
+		"tap_leg":{"cd":10},
+		"tap_face":{"cd":10},
+		"flick_head":{"cd":20},
+		"shake":{"cd":60},
+		"born":{"cd":60}
+	}
+}
