@@ -1,0 +1,264 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    font-family: "Microsoft Yahei", Arial, sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    user-select: none;
+    width: 1920px;
+    height: 1080px;
+    transform-origin: 0 0;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+    transition: all .3s linear;
+    overflow: hidden;
+}
+.background-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/background-2.png) 0% 0% / 100% 100%;
+}
+.footer{
+    width: 1532px;
+    height: 49px;
+    position: absolute;
+    left: 206px;
+    top: 1028px;
+    z-index: 51;
+    background: url(../images/pic-1.png) 0px 0px / 100% 100%;
+}
+.title{
+    width: 1625px;
+    height: 146px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left: 164px;
+    top: 3px;
+    z-index: 50;
+    background: url(../images/pic-2.png) 0px 0px / 100% 100%;
+}
+.logo{
+    width: 178px;
+    height: 62px;
+    position: absolute;
+    left: 28px;
+    top: 28px;
+    z-index: 81;
+    background: url(../images/pic-8.png) 0px 0px / 100% 100%;
+}
+.chart{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    width: 510px;
+    position: absolute;
+    left: 30px;
+    top: 145px;
+}
+.comTit{
+    line-height: 35px;
+    font-size: 22px;
+    color: rgb(154, 168, 212);
+}
+.comTit label{
+    font-size: 20px;
+    color: rgb(64, 77, 105);
+    padding-left: 20px;
+}
+.box1 .item .tit{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    color: #9aa8d4;
+    margin-top: 30px;
+}
+/* 数字滚动 */
+.flipNumber{
+    color: #fff;
+    font-size: 62px;
+    font-weight: bold;
+    width: 100%;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    margin-top: 30px;
+}
+.proBar{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.proBar .bar{
+    float: left;
+    width: 90%;
+    height: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    transition: width .6s ease;
+    background: rgba(255, 255, 255, 0.1);
+}
+.proBar .bar .curBar{
+    width: 26%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(36, 203, 255) 115.385%, rgb(119, 96, 246) 384.615%);
+}
+.proBar .bar .curBar .light{
+    float: right;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    margin: 2px;
+    background: #fff;
+}
+.proBar .bar .tip{
+    position: absolute;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    top: -30.8px;
+    left: calc(26% - 5px);
+    margin-left: -50%;
+}
+.proBar .bar .triangle{
+    position: absolute;
+    top: 8px;
+    left: 23%;
+    width: 0;
+    height: 0;
+    border: 8px solid;
+    border-color: transparent transparent #fff;
+}
+
+.box2{
+    top: 520px;
+}
+.box2 .con{
+    margin-top: 30px;
+    width: 510px;
+    height: 460px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.box3{
+    top: 150px;
+    left: 590px;
+    width: 825px;
+}
+.box3 .con{
+    width: 100%;
+    height: 405px;
+}
+.box4{
+    top: 150px;
+    left: 1430px;
+    width: 450px;
+}
+.box4 .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box4 .list li{
+    width: 250px;
+    list-style: none;
+    color: #fff;
+    margin-top: 30px;
+}
+.box4 .list li:nth-child(2n+1){
+    width: 200px
+}
+.box4 .list li span{
+    padding: 0 0 0 15px;
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+    vertical-align: top;
+}
+.box4 .list li label{
+    font-size: 14px;
+    font-weight: normal;
+    color: #b0c2f9;
+    display: block;
+}
+.box5{
+    top: 420px;
+    left: 1430px;
+    width: 440px;
+}
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 0;
+    border: solid 1px #33416b;
+}
+table thead{
+    background: rgba(0, 0, 0, 0.01);
+    color: rgb(154, 168, 212);
+    position: relative;
+}
+table thead th{
+    border-color: #33416b;
+    font-size: 14px;
+    padding: 8px 12px;
+    text-align: center;
+}
+table tr td{
+    color: #9aa8d4;
+    font-size: 13px;
+    padding: 8px 12px;
+    text-align: center;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #33416b;
+}
+
+.mapBox{
+    width: 448px;
+    height: 374px;
+    position: absolute;
+    left: 569px;
+    top: 624px;
+    z-index: 82;
+}
+.mapBox .comTit{
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+.pieBox{
+    width: 420px;
+    position: absolute;
+    left: 995px;
+    top: 620px;
+    z-index: 82;
+}
+.pieBox .comTit{
+    padding-left: 30px;
+}
+.pieBox .chart{
+    height: 340px;
+}

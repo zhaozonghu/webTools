@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电商618数据大屏</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/odometer-theme-default.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="footer"></div>
+        <div class="title">电商618数据大屏</div>
+        <div class="logo"></div>
+        <!-- 电商数据 -->
+        <div class="box box1">
+            <div class="comTit">电商数据 <label>Sell Data</label></div>
+            <div class="item">
+                <div class="tit">销售量</div>
+                <div class="flipNumber" id="flipNumber"></div>
+            </div>
+            <div class="item">
+                <div class="tit">完成百分比</div>
+                <div class="proBar">
+                    <div class="bar">
+                        <div class="curBar">
+                            <div class="light"></div>
+                        </div>
+                        <div class="tip">26%</div>
+                        <div class="triangle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索热词 -->
+        <div class="box box2">
+            <div class="comTit">搜索热词 <label>Top Search</label></div>
+            <div class="con">
+                <div class="chart" id="searchChart"></div>
+            </div>
+        </div>
+        <!-- 订单实时走势 -->
+        <div class="box box3">
+            <div class="comTit">订单实时走势 <label>Order curve</label></div>
+            <div class="con">
+                <div class="chart" id="orderChart"></div>
+            </div>
+        </div>
+        <!-- 销售区域 -->
+        <div class="mapBox">
+            <div class="comTit">销售区域Top</div>
+            <div class="chart" id="chinaMap"></div>
+        </div>
+        <!-- 购买终端 -->
+        <div class="pieBox">
+            <div class="comTit">购买终端</div>
+            <div class="chart" id="pieChart"></div>
+        </div>
+        <!-- 订单实时走势 -->
+        <div class="box box4">
+            <div class="comTit">统计数据 <label>Statistics Data</label></div>
+            <ul class="list">
+                <li>
+                    <img src="images/pic-4.png">
+                    <span>71.5<label>订单总数(万)</label></span>
+                </li>
+                <li>
+                    <img src="images/pic-5.png">
+                    <span>40.20<label>销售总量（万元）</label></span>
+                </li>
+                <li>
+                    <img src="images/pic-6.png">
+                    <span>93.7<label>人均消费</label></span>
+                </li>
+                <li>
+                    <img src="images/pic-7.png">
+                    <span>35<label>近10分钟新增订单数(万)</label></span>
+                </li>
+            </ul>
+        </div>
+        <!-- 大额订单Top -->
+        <div class="box box5">
+            <div class="comTit">大额订单Top <label>Super Orders</label></div>
+            <div class="table" id="orderTable"></div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="js/echarts-wordcloud.min.js"></script>
+    <script src="js/odometer.min.js"></script>
+    <script src="js/geoCoord.js"></script>
+    <script src="js/data.js"></script>
+    <script>
+        var DataPage={
+            colors:["#24CBFF", "#7760F6", "#484CDC", "#711D8E", "#2D3C98", "#3F8BD8", "#2E33D1", "#1589FF", "#5C4AC9"],
+            mapSliderIndex:-1,
+            mapSliderIntervalEvent:null,
+            init:function(){
+                
+            var el = document.getElementById('flipNumber');
+                od = new Odometer({
+                    el: el,
+                    value: '545625',
+                    duration: 1000,
+                    format: '(,ddd).dd',
+                    theme: 'default',
+                    animation: 'count'
+                });
+                od.update(12012974);
+
+                this.searchChart();
+                this.orderChart();
+                this.chinaMap();
+                this.pieChart();
+                this.getOrderList();
+            },
+            searchChart:function(){
+                var _this=this,newData=[];
+                var data=[{"name":"iPhone X","value":19651},{"name":"Mac Pro","value":18341},{"name":"华为P20","value":17319},{"name":"小米手机","value":12550},{"name":"欧莱雅","value":11638},{"name":"玛莎拉蒂","value":10608},{"name":"特斯拉Model S","value":8298},{"name":"jackjones","value":7630},{"name":"韩都衣舍","value":7440},{"name":"天生要强","value":6065},{"name":"梅西","value":5065},{"name":"三只松鼠","value":4965}];
+                    data.forEach(function(e, t) {
+                        var a = {
+                            normal: {
+                                color: _this.colors[t % _this.colors.length]
+                            }
+                        };
+                        newData.push({
+                            name: e.name,
+                            value: e.value,
+                            textStyle: a
+                        })
+                    })
+                var chart = echarts.init(document.getElementById('searchChart'));
+                chart.setOption({
+                    tooltip: {},
+                        toolbox: {
+                            show: !1
+                        },
+                        series: [{
+                            type: "wordCloud",
+                            left: "center",
+                            top: "center",
+                            width: "100%",
+                            height: "100%",
+                            sizeRange: [20, 58],
+                            rotationRange: [0, 0],
+                            rotationStep: 45,
+                            drawOutOfBound: !0,
+                            gridSize: 32,
+                            textStyle: {
+                                normal: {
+                                    fontWeight: "bold"
+                                }
+                            },
+                            data: newData
+                        }]
+                })
+            },
+            orderChart:function(){
+                var colors=['#24cbff','#7760f6'];
+                var data={"categories":["14:13","14:14","14:15","14:16","14:17","14:18","14:19","14:20","14:21","14:22","14:23","14:24","14:25","14:26","14:27","14:28","14:29","14:30","14:31","14:32","14:33","14:34","14:35","14:36","14:37","14:38","14:39","14:40","14:41","14:42","14:43","14:44","14:45","14:46","14:47","14:48","14:49","14:50","14:51","14:52","14:53","14:54","14:55","14:56","14:57","14:58","14:59","15:00","15:01","15:02","15:03","15:04","15:05","15:06","15:07","15:08","15:09","15:10","15:11","15:12","15:13","15:14","15:15","15:16","15:17","15:18","15:19","15:20","15:21","15:22","15:23","15:24","15:25","15:26","15:27","15:28","15:29","15:30","15:31","15:32","15:33","15:34","15:35","15:36","15:37","15:38","15:39","15:40","15:41","15:42","15:43","15:44","15:45","15:46","15:47","15:48","15:49","15:50","15:51","15:52"],"series":[{"name":"新增订单数","data":[0,9,19,25,29,34,37,37,35,32,30,24,17,10,1,10,15,25,30,35,39,45,45,47,48,46,43,40,39,36,32,27,25,23,21,19,21,19,22,21,24,27,31,33,35,36,38,42,42,41,42,42,44,42,41,40,43,43,43,45,47,47,51,53,58,60,66,71,74,76,79,81,82,84,83,81,76,72,68,65,59,54,49,46,40,39,37,38,37,42,45,52,58,67,77,87,97,106,114,124]},{"name":"退单数","data":[51,49,42,36,31,22,11,3,9,18,25,32,40,43,46,48,48,46,44,41,36,32,28,23,19,16,13,7,6,6,8,8,11,13,15,18,22,25,31,34,36,40,40,42,43,42,43,45,44,41,44,42,44,45,45,46,49,50,53,55,61,62,66,68,67,70,68,70,65,64,61,58,56,52,47,44,40,41,37,39,38,41,46,50,55,64,69,79,85,95,103,108,116,121,122,126,125,122,118,112]}]};
+                var series=[];
+                    data.series.forEach(function(o,i){
+                        let _item={
+                            "name": o.name,
+                            "data": o.data,
+                            "type": "bar",
+                            "yAxisIndex": 0,
+                            "barMaxWidth": 16,
+                            "barMinHeight": 2,
+                            "itemStyle": {
+                                "normal": {
+                                    color:colors[i],
+                                    "opacity": 1
+                                }
+                            }
+                        };
+                        series.push(_item)
+                    });
+                var chart = echarts.init(document.getElementById('orderChart'));
+                chart.setOption({
+                        "legend": {
+                            "data": ["新增订单数", "退单数"],
+                            "show": true,
+                            "selected": {
+                                "新增订单数": true,
+                                "退单数": true
+                            },
+                            "textStyle": {
+                                "fontSize": 12,
+                                "color": "#ccc"
+                            },
+                            "type": "plain",
+                            "bottom": 0,
+                            "orient": "horizontal",
+                            "align": "auto"
+                        },
+                        "dataZoom": {
+                            "show": false,
+                            "realtime": true,
+                            "start": 0,
+                            "end": 100
+                        },
+                        "grid": {
+                            "left": 40,
+                            "top": 20,
+                            "right": 20,
+                            "bottom": 55
+                        },
+                        "xAxis": [{
+                            "show": true,
+                            "type": "category",
+                            "splitLine": {
+                                "show": false
+                            },
+                            "boundaryGap": true,
+                            "axisLine": {
+                                "lineStyle": {
+                                    "color": "#ccc",
+                                    "width": 1
+                                }
+                            },
+                            "axisLabel": {
+                                "color": "#ccc",
+                                "fontSize": 12
+                            },
+                            "axisTick": {
+                                "alignWithLabel": true
+                            },
+                            "data": data.categories,
+                        }],
+                        "yAxis": [{
+                            "type": "value",
+                            "scale": false,
+                            "nameTextStyle": {
+                                "color": "#ccc",
+                                "fontSize": 12
+                            },
+                            "axisLabel": {
+                                "color": "#ccc",
+                                "fontSize": 12
+                            },
+                            "axisLine": {
+                                "lineStyle": {
+                                    "color": "#ccc",
+                                    "width": 1
+                                }
+                            },
+                            "inverse": false,
+                            "splitLine": {
+                                "show": false,
+                                "lineStyle": {
+                                    "color": "#333333"
+                                }
+                            },
+                            "splitArea": {
+                                "show": false
+                            }
+                        }],
+                        "series": series,
+                        "tooltip": {
+                            "trigger": "axis",
+                            "confine": false
+                        }
+                    }
+                );
+            },
+            chinaMap:function(){
+                var _this=this;
+                var o = 0,t=mapData.mapData,b=5,l=mapData
+                    , m = parseFloat(t[0].value) || 0
+                    , d = 0;
+                    //最小值 最大值 总数
+                    t.forEach(function(t) {
+                        var a = parseFloat(t.value) || 0;
+                        a > o && (o = a),
+                        m > a && (m = a),
+                        d += a;
+                    }),
+                    t.sort(function(e, t) {
+                        return parseFloat(e.value) > parseFloat(t.value) ? -1 : 1
+                    });
+                    var f = t.length;
+                    var topData=t.slice(0, 5);
+                    var convertData = function (data) {
+                        var res = [];
+                        for (var i = 0; i < data.length; i++) {
+                            var geoCoord = geoCoordMap[data[i].name];
+                            if (geoCoord) {
+                                res.push({
+                                    name: data[i].name,
+                                    value: geoCoord.concat(data[i].value)
+                                });
+                            }
+                        }
+                        return res;
+                    };
+                //百度地图SVG
+                $.get("js/json/china.json", function (as) {
+                    // 引入china地区地图
+                    echarts.registerMap('china', as);
+                var chartMap = echarts.init(document.getElementById('chinaMap'));
+                    chartMap.setOption(
+                        {
+                            "toolbox": {
+                                "show": false
+                            },
+                            "visualMap": {
+                                "type": "continuous",
+                                "left": "left",
+                                "bottom": 0,
+                                "orient": "vertical",
+                                "show": true,
+                                "min": m,
+                                "max": o,
+                                "color": ["#711D8E", "#484CDC", "#7760F6", "#24CBFF"],
+                                "text": ["人口"],
+                                "calculable": true,
+                                "itemHeight": 80,
+                                "itemWidth": 10,
+                                "precision": 0,
+                                "textStyle": {
+                                    "color": "#fff",
+                                    "fontSize": 12
+                                }
+                            },
+                            "geo": {
+                                "map": "china",
+                                "label": {
+                                    "normal": {
+                                        "show": false,
+                                        "color": "#fff",
+                                        "fontSize": 12,
+                                        formatter: function(e) {
+                                            var t = e.name;
+                                            if (t.length <= 4)
+                                                return t;
+                                            var a = /.{4}/g
+                                            , o = t.match(a);
+                                            return o.push(t.substring(o.join("").length)),
+                                            o.join("\n")
+                                        }
+                                    },
+                                    "emphasis": {
+                                        "show": false
+                                    }
+                                },
+                                "silent": true,
+                                "roam": false,
+                                "itemStyle": {
+                                    "normal": {
+                                        "areaColor": "rgba(162, 166, 168, 1)",
+                                        "borderColor": "#1a1680"
+                                    },
+                                    "emphasis": {
+                                        "areaColor": "#ffdf4a"
+                                    }
+                                }
+                            },
+                            "tooltip": {
+                                "trigger": "item",
+                                formatter: function(e) {
+                                    var n = e.name
+                                      , i = parseInt(e.value[2]);
+                                    n += l.valueName ? "<br> " + l.valueName + ": " + i : ": " + i;
+                                    var s = e.dataIndex;
+                                    var p = t[s];
+                                    return  p && p.tooltipValues && p.tooltipValues instanceof Array && p.tooltipValues.forEach(function(e, t) {
+                                        var a = l.tooltipNames && l.tooltipNames[t] ? l.tooltipNames[t] + ": " : ""
+                                          , o = l.tooltipUnits && l.tooltipUnits[t] ? l.tooltipUnits[t] : "";
+                                        n += "<br>" + a + e + o
+                                    }),"[第" + (e.dataIndex + 1) + "名/" + f + "]<br>"+n;
+                                }
+                            },
+                            "series": [{
+                                "name": "normal",
+                                "type": "scatter",
+                                "coordinateSystem": "geo",
+                                "symbolSize": 12,
+                                "label": {
+                                    "normal": {
+                                        "show": false
+                                    },
+                                    "emphasis": {
+                                        "show": false
+                                    }
+                                },
+                                "itemStyle": {
+                                    "normal": {
+                                        "color": "#1ca2a8",
+                                        "borderColor": "#4a6671",
+                                        "borderWidth": 0
+                                    },
+                                    "emphasis": {
+                                        "borderColor": "#4a6671",
+                                        "borderWidth": 0
+                                    }
+                                },
+                                "data": convertData(t)
+                            }, {
+                                "name": "top",
+                                "type": "effectScatter",
+                                "coordinateSystem": "geo",
+                                "symbolSize": 14,
+                                "showEffectOn": "render",
+                                "rippleEffect": {
+                                    "brushType": "stroke"
+                                },
+                                "hoverAnimation": true,
+                                "label": {
+                                    "normal": {
+                                        "formatter": "{b}",
+                                        "position": "right",
+                                        "fontSize": 12,
+                                        "show": true
+                                    }
+                                },
+                                "itemStyle": {
+                                    "normal": {
+                                        "color": "#e52536",
+                                        "shadowBlur": 7,
+                                        "shadowColor": "#333"
+                                    }
+                                },
+                                "zlevel": 1,
+                                "data": convertData(topData)
+                            }]
+                        }
+                    );
+                    //自动提示
+                    if (_this.mapSliderIntervalEvent && clearInterval(_this.mapSliderIntervalEvent),chartMap) {
+                        var F = function() {
+                            try {
+                                chartMap.dispatchAction({
+                                    type: "mapUnSelect",
+                                    seriesIndex: 0,
+                                    dataIndex: _this.mapSliderIndex % 5
+                                }),
+                                _this.mapSliderIndex++,
+                                chartMap.dispatchAction({
+                                    type: "mapSelect",
+                                    seriesIndex: 0,
+                                    dataIndex: _this.mapSliderIndex % 5
+                                }),
+                                chartMap.dispatchAction({
+                                    type: "hideTip"
+                                }),
+                                chartMap.dispatchAction({
+                                    type: "showTip",
+                                    seriesIndex: 0,
+                                    dataIndex: _this.mapSliderIndex % 5
+                                })
+                            } catch (e) {}
+                        };
+                        _this.mapSliderIntervalEvent = setInterval(F, 3000)
+                    }
+                });
+            },
+            pieChart:function(){
+                var _this=this;
+                var data= [{
+                        "name": "PC Web",
+                        "value": 349270
+                    }, {
+                        "name": "iOS",
+                        "value": 291858
+                    }, {
+                        "name": "Android",
+                        "value": 144313
+                    }, {
+                        "name": "Wap Web",
+                        "value": 86096
+                    }];
+                var chart = echarts.init(document.getElementById('pieChart'));
+                    chart.setOption({
+                        color:_this.colors,
+                        tooltip : {
+                            trigger: 'item',
+                            formatter: "{b} : {c} ({d}%)"
+                        },
+                        calculable : true,
+                        series : [
+                            {
+                                type:'pie',
+                                radius : ["20%", "50%"],
+                                center : ['50%', '50%'],
+                                minAngle: 6,
+                                label:{
+                                    show:true,
+                                    formatter: "{b} : {d}%"
+                                },
+                                labelLine:{
+                                    show:true
+                                },
+                                roseType : 'radius',
+                                data:data
+                            }
+                        ]
+                    });
+
+            },
+            getOrderList:function(){
+                var _t='',_b='';
+                tableData.columns.forEach((o,i)=>{
+                    _t+='<th>'+o.name+'</th>'
+                });
+                tableData.rows.forEach((o,i)=>{
+                    _b+='<tr><td>'+o.time+'</td><td>'+o.goods+'</td><td>'+o.num+'</td><td>'+o.sum+'</td></tr>'
+                });
+                $('#orderTable').html('<table><thead>'+_t+'</thead><tbody>'+_b+'</tbody></table>')
+            },
+        }
+        $(function(){
+            DataPage.init();
+        })
+    </script>
+</body>
+</html>
