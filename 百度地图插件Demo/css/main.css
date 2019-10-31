@@ -1,0 +1,50 @@
+.clearfix:after{clear: both; content: ' '; display: block; font-size: 0; line-height: 0; visibility: hidden; width: 0; height: 0}
+ul.clearfix li{float: left}
+.clearfix{*zoom: 1}
+*{margin: 0; padding: 0; border: 0; vertical-align: baseline}
+*{box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; -icab-box-sizing: border-box; -khtml-box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section{display: block}
+select{border: 1px solid #dee1e3; font-size: 12px; color: #333; line-height: 12px}
+ul{list-style: none}
+ol{list-style: decimal inside}
+blockquote,
+q{quotes: none}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after{content: ''; content: none}
+table{border-collapse: collapse; border-spacing: 0}
+a{text-decoration: none; cursor: pointer}
+a:hover,a:focus{text-decoration: none;outline: 0}
+span{color: inherit}
+a img{vertical-align: middle}
+label[for]{cursor: pointer}
+.no_borderL{border-left: 0 !important;}
+.no_borderR{border-right: 0 !important;}
+.red_txt{color: #f76262 !important;}
+.green_txt{color: #58e49e !important;}
+.no_padding{padding: 0 !important;}
+.blur{-webkit-filter: blur(10px); filter: blur(10px);}
+body,
+html{height: 100%; overflow: hidden; background: #030e20; font-family: '微软雅黑','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 24px;}
+body{background: url(../images/bg.jpg) no-repeat;background-size: cover;}
+
+/* 地图显示区域 */
+.mapBox{
+    width: 1200px; 
+    height: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}

@@ -1,0 +1,459 @@
+{
+	"groups": [
+		{
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json,gameEui_json,load_bg_jpg,loading_gif,note_3_png,music_png,note_1_png,note_2_png,nail_png,sound_mp3,sound_wood_mp3,sound_car_mp3,sound_falls_mp3,sound_photo_mp3,sound_plane_mp3,sound_sea_mp3,sound_wind_mp3,start_page_tex_json,start_page_tex_png,start_page_ske_json,new_ytkc_tex_0_json,new_ytkc_tex_0_png,new_ytkc_tex_1_json,new_ytkc_tex_1_png,new_ytkc_tex_2_json,new_ytkc_tex_2_png,new_ytkc_tex_3_json,new_ytkc_tex_3_png,new_ytkc_tex_4_json,new_ytkc_tex_4_png,new_ytkc_tex_5_json,new_ytkc_tex_5_png,new_ytkc_tex_6_json,new_ytkc_tex_6_png,new_ytkc_ske_dbbin,new_ytkc_tex_7_json,new_ytkc_tex_7_png,new_ytkc_tex_8_json,new_ytkc_tex_8_png,new_ytkc_tex_9_json,new_ytkc_tex_9_png,new_ytkc_tex_10_json,new_ytkc_tex_10_png,new_ytkc_tex_11_json,new_ytkc_tex_11_png,new_ytkc_tex_12_json,new_ytkc_tex_12_png,load-prg_png,load-prg-blank_png,load-text_png",
+			"name": "preload"
+		},
+		{
+			"keys": "end_page_ske_json,end_page_tex_png,rp_yes_png,s_light_png,rp_init_png,rp_joined_png,red_packet_png,rp_new_user_png,rp_no_png,s_text_png,s_bus_png,end_page_tex_json",
+			"name": "endPageRes"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "gameEui.json",
+			"type": "json",
+			"name": "gameEui_json"
+		},
+		{
+			"url": "load_bg.jpg",
+			"type": "image",
+			"name": "load_bg_jpg"
+		},
+		{
+			"url": "loading.gif",
+			"type": "image",
+			"name": "loading_gif"
+		},
+		{
+			"url": "rp_yes.png",
+			"type": "image",
+			"name": "rp_yes_png"
+		},
+		{
+			"url": "rp_init.png",
+			"type": "image",
+			"name": "rp_init_png"
+		},
+		{
+			"url": "rp_joined.png",
+			"type": "image",
+			"name": "rp_joined_png"
+		},
+		{
+			"url": "rp_new_user.png",
+			"type": "image",
+			"name": "rp_new_user_png"
+		},
+		{
+			"url": "rp_no.png",
+			"type": "image",
+			"name": "rp_no_png"
+		},
+		{
+			"url": "s_text.png",
+			"type": "image",
+			"name": "s_text_png"
+		},
+		{
+			"url": "s_bus.png",
+			"type": "image",
+			"name": "s_bus_png"
+		},
+		{
+			"url": "s_light.png",
+			"type": "image",
+			"name": "s_light_png"
+		},
+		{
+			"url": "note_3.png",
+			"type": "image",
+			"name": "note_3_png"
+		},
+		{
+			"url": "music.png",
+			"type": "image",
+			"name": "music_png"
+		},
+		{
+			"url": "note_1.png",
+			"type": "image",
+			"name": "note_1_png"
+		},
+		{
+			"url": "note_2.png",
+			"type": "image",
+			"name": "note_2_png"
+		},
+		{
+			"url": "end_page_tex.json",
+			"type": "json",
+			"name": "end_page_tex_json"
+		},
+		{
+			"url": "end_page_tex.png",
+			"type": "image",
+			"name": "end_page_tex_png"
+		},
+		{
+			"url": "end_page_ske.json",
+			"type": "json",
+			"name": "end_page_ske_json"
+		},
+		{
+			"url": "red_packet.png",
+			"type": "image",
+			"name": "red_packet_png"
+		},
+		{
+			"url": "nail.png",
+			"type": "image",
+			"name": "nail_png"
+		},
+		{
+			"url": "sound/sound.mp3",
+			"type": "sound",
+			"name": "sound_mp3"
+		},
+		{
+			"url": "sound/sound_wood.mp3",
+			"type": "sound",
+			"name": "sound_wood_mp3"
+		},
+		{
+			"url": "sound/sound_car.mp3",
+			"type": "sound",
+			"name": "sound_car_mp3"
+		},
+		{
+			"url": "sound/sound_falls.mp3",
+			"type": "sound",
+			"name": "sound_falls_mp3"
+		},
+		{
+			"url": "sound/sound_photo.mp3",
+			"type": "sound",
+			"name": "sound_photo_mp3"
+		},
+		{
+			"url": "sound/sound_plane.mp3",
+			"type": "sound",
+			"name": "sound_plane_mp3"
+		},
+		{
+			"url": "sound/sound_sea.mp3",
+			"type": "sound",
+			"name": "sound_sea_mp3"
+		},
+		{
+			"url": "sound/sound_wind.mp3",
+			"type": "sound",
+			"name": "sound_wind_mp3"
+		},
+		{
+			"url": "start_page_tex.json",
+			"type": "json",
+			"name": "start_page_tex_json"
+		},
+		{
+			"url": "start_page_tex.png",
+			"type": "image",
+			"name": "start_page_tex_png"
+		},
+		{
+			"url": "start_page_ske.json",
+			"type": "json",
+			"name": "start_page_ske_json"
+		},
+		{
+			"url": "new_ytkc_tex_0.json",
+			"type": "json",
+			"name": "new_ytkc_tex_0_json"
+		},
+		{
+			"url": "new_ytkc_tex_0.png",
+			"type": "image",
+			"name": "new_ytkc_tex_0_png"
+		},
+		{
+			"url": "new_ytkc_tex_1.json",
+			"type": "json",
+			"name": "new_ytkc_tex_1_json"
+		},
+		{
+			"url": "new_ytkc_tex_1.png",
+			"type": "image",
+			"name": "new_ytkc_tex_1_png"
+		},
+		{
+			"url": "new_ytkc_tex_2.json",
+			"type": "json",
+			"name": "new_ytkc_tex_2_json"
+		},
+		{
+			"url": "new_ytkc_tex_2.png",
+			"type": "image",
+			"name": "new_ytkc_tex_2_png"
+		},
+		{
+			"url": "new_ytkc_tex_3.json",
+			"type": "json",
+			"name": "new_ytkc_tex_3_json"
+		},
+		{
+			"url": "new_ytkc_tex_3.png",
+			"type": "image",
+			"name": "new_ytkc_tex_3_png"
+		},
+		{
+			"url": "new_ytkc_tex_4.json",
+			"type": "json",
+			"name": "new_ytkc_tex_4_json"
+		},
+		{
+			"url": "new_ytkc_tex_4.png",
+			"type": "image",
+			"name": "new_ytkc_tex_4_png"
+		},
+		{
+			"url": "new_ytkc_tex_5.json",
+			"type": "json",
+			"name": "new_ytkc_tex_5_json"
+		},
+		{
+			"url": "new_ytkc_tex_5.png",
+			"type": "image",
+			"name": "new_ytkc_tex_5_png"
+		},
+		{
+			"url": "new_ytkc_tex_6.json",
+			"type": "json",
+			"name": "new_ytkc_tex_6_json"
+		},
+		{
+			"url": "new_ytkc_tex_6.png",
+			"type": "image",
+			"name": "new_ytkc_tex_6_png"
+		},
+		{
+			"url": "new_ytkc_tex_7.json",
+			"type": "json",
+			"name": "new_ytkc_tex_7_json"
+		},
+		{
+			"url": "new_ytkc_tex_7.png",
+			"type": "image",
+			"name": "new_ytkc_tex_7_png"
+		},
+		{
+			"url": "new_ytkc_tex_8.json",
+			"type": "json",
+			"name": "new_ytkc_tex_8_json"
+		},
+		{
+			"url": "new_ytkc_tex_8.png",
+			"type": "image",
+			"name": "new_ytkc_tex_8_png"
+		},
+		{
+			"url": "new_ytkc_tex_9.json",
+			"type": "json",
+			"name": "new_ytkc_tex_9_json"
+		},
+		{
+			"url": "new_ytkc_tex_9.png",
+			"type": "image",
+			"name": "new_ytkc_tex_9_png"
+		},
+		{
+			"url": "new_ytkc_tex_10.json",
+			"type": "json",
+			"name": "new_ytkc_tex_10_json"
+		},
+		{
+			"url": "new_ytkc_tex_10.png",
+			"type": "image",
+			"name": "new_ytkc_tex_10_png"
+		},
+		{
+			"url": "new_ytkc_tex_11.json",
+			"type": "json",
+			"name": "new_ytkc_tex_11_json"
+		},
+		{
+			"url": "new_ytkc_tex_11.png",
+			"type": "image",
+			"name": "new_ytkc_tex_11_png"
+		},
+		{
+			"url": "new_ytkc_tex_12.json",
+			"type": "json",
+			"name": "new_ytkc_tex_12_json"
+		},
+		{
+			"url": "new_ytkc_tex_12.png",
+			"type": "image",
+			"name": "new_ytkc_tex_12_png"
+		},
+		{
+			"url": "new_ytkc_ske.dbbin",
+			"type": "bin",
+			"name": "new_ytkc_ske_dbbin"
+		},
+		{
+			"url": "load-prg.png",
+			"type": "image",
+			"name": "load-prg_png"
+		},
+		{
+			"url": "load-prg-blank.png",
+			"type": "image",
+			"name": "load-prg-blank_png"
+		},
+		{
+			"url": "load-text.png",
+			"type": "image",
+			"name": "load-text_png"
+		},
+		{
+			"name": "rp_two_png.png",
+			"type": "image",
+			"url": "rp_two.png"
+		},
+		{
+			"name": "rp_one_png.png",
+			"type": "image",
+			"url": "rp_one.png"
+		}
+	]
+}

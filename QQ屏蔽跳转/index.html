@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top-bar-guidance">
+        <p>点击右上角<img src="//gw.alicdn.com/tfs/TB1xwiUNpXXXXaIXXXXXXXXXXXX-55-55.png" class="icon-safari"> <span
+                id="openm">Safari打开</span></p>
+        <p>可以继续浏览本站哦~</p>
+    </div>
+    <div class="app-download-tip">
+        <span class="guidance-desc">您也可以复制本站网址，到其它浏览器打开</span>
+    </div>
+    <a data-clipboard-text="http://www.qqnames.com/" class="app-download-btn" id="J_BtnDowanloadApp">点此继续访问</a>
+    <a style="display: none;" href="" id="vurl" rel="noreferrer"></a>
+
+    <script src="//lib.baomitu.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//open.mobile.qq.com/sdk/qqapi.js?_bid=152"></script>
+    <script>
+        function openu(u) {
+            document.getElementById("vurl").href = u;
+            document.getElementById("vurl").click();
+        }
+        var url = window.location.href;
+        document.querySelector('body').addEventListener('touchmove', function (event) {
+            event.preventDefault();
+        });
+        if (navigator.userAgent.indexOf("Android") > -1) {
+            document.getElementById("openm").innerHTML = '浏览器打开';
+        }
+        if (navigator.userAgent.indexOf("QQ/") > -1) {
+            openu("mttbrowser://url=" + url);
+            $("html").on("click", function () {
+                openu("mttbrowser://url=" + url);
+                openu("ucweb://" + url);
+                openu("qihoobrowser://browse?url=" + url);
+                openu("googlechrome://browse?url=" + url);
+                openu("mibrowser:" + url);
+                openu("taobao://" + url);
+            });
+            mqq.ui.openUrl({ target: 2, url: window.location.href });
+        } else if (navigator.userAgent.indexOf("MicroMessenger") > -1) {
+            if (navigator.userAgent.indexOf("Android") > -1) {
+                var iframe = document.createElement("iframe");
+                iframe.style.display = "none";
+                iframe.src = '?open=1';
+                document.body.appendChild(iframe);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

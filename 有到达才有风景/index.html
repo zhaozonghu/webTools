@@ -1,0 +1,670 @@
+<!DOCTYPE html><html data-dpr="1" style="font-size: 54px;"><head>
+    <meta charset="utf-8">
+    <title>WECHAT_EMPTY_TITLE</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <link rel="stylesheet" type="text/css" href="http://oss.ddhudong.com/common/styles/reset.css?v=2017061302">
+    <style>
+        html, body {
+            /*-ms-touch-action: none;*/
+            background: #888888;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+            position: relative
+        }
+
+        .loading {
+            width: 100%;
+            height: 100%;
+            background: url("http://wx.yutong.com/ddhtml/resource/load_bg.jpg") top center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+	
+        }
+
+        .loading_gif {
+            width: 100%;
+            height: 100%;
+        }
+
+        .start_page {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: url("http://wx.yutong.com/ddhtml/resource/bg_1.png") top center;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .canvas_wrp {
+            z-index: 10
+        }
+
+        .share {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: #fff;
+            text-align: right;
+            display: none;
+            left: 0;
+            top: 0;
+            z-index: 100;
+        }
+
+        .share_content {
+            width: 5.9rem;
+            height: 3.026667rem;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -.3rem;
+            right: 0;
+            z-index: 110;
+        }
+
+        .s_bus {
+            width: 5.746667rem;
+            height: 3.026667rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 113
+        }
+
+        .s_text {
+            width: 2.96rem;
+            height: 1rem;
+            position: absolute;
+            top: .76rem;
+            right: 0;
+            z-index: 113
+        }
+
+        .s_light {
+            width: 3.84rem;
+            height: 2.6rem;
+            position: absolute;
+            top: -5px;
+            right: 0;
+            -webkit-animation: twinkling 2.1s infinite ease-in-out;
+            animation: twinkling 2.1s infinite ease-in-out;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes twinkling {
+            0% {
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                -webkit-transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: scale(1.12);
+            }
+
+            100% {
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @keyframes twinkling {
+            0% {
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                -webkit-transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                filter: alpha(opacity=100);
+                -webkit-transform: scale(1.12);
+            }
+
+            100% {
+                opacity: 0.5;
+                filter: alpha(opacity=50);
+                -webkit-transform: scale(1);
+            }
+        }
+
+        @-webkit-keyframes float1 {
+            0% {
+                -webkit-transform: scale(1) translate(0,0);
+                opacity: 0;
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.1) translate(-50px,-0);
+            }
+        }
+
+        @-webkit-keyframes float2 {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(1) translate(0,0);
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1.1) translate(-60px,-10px);
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes float3 {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(1) translate(0,0);
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1.1) translate(-70px,-20px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes float1 {
+            0% {
+                -webkit-transform: scale(1) translate(0,0);
+                opacity: 0;
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: scale(1.1) translate(-50px,-0);
+            }
+        }
+
+        @keyframes float2 {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(1) translate(0,0);
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1.1) translate(-60px,-10px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes float3 {
+            0% {
+                opacity: 0;
+                -webkit-transform: scale(1) translate(0,0);
+            }
+
+            2% {
+                opacity: 1;
+            }
+
+            100% {
+                -webkit-transform: scale(1.1) translate(-70px,-20px);
+                opacity: 0;
+            }
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(0,0,0,.75);
+            color: #fff;
+            text-align: right;
+            left: 0;
+            top: 0;
+            z-index: 100;
+        }
+
+        .draw_wrp {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 100;
+            display: none;
+        }
+
+        .wraper {
+            width: 5.04rem;
+            height: 6.68rem;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 110
+        }
+
+        .init_wraper {
+            height: 5.733333rem;
+            background: url(http://wx.yutong.com/ddhtml/resource/rp_init.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .draw_btn {
+            display: block;
+            width: 1.68rem;
+            height: 1.68rem;
+            border-radius: 50%;
+            background: transparent;
+            margin: 1.56rem auto 0;
+        }
+
+        .no_wraper {
+            background: url(http://wx.yutong.com/ddhtml/resource/rp_no.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .yes_wraper {
+            background: url(http://wx.yutong.com/ddhtml/resource/rp_yes.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+       
+        .new_user_wraper {
+            /*background: url(http://wx.yutong.com/ddhtml/resource/rp_new_user.png);
+                background-size: 100% 100%;
+                background-repeat: no-repeat;*/
+        }
+
+        .new_user_wraper > img {
+            width: 100%;
+            height: 100%;
+        }
+        .has_draw {
+           
+            background-image: url(http://wx.yutong.com/ddhtml/resource/rp_one.png);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        .close {
+            width: .64rem;
+            height: .64rem;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: .186667rem;
+            background: transparent;
+            border-radius: 50%;
+        }
+
+        .music {
+            width: 1.026667rem;
+            height: .746667rem;
+            /* background: url(/resource/music.png);
+            background-size: 100%;
+            background-repeat: no-repeat; */
+            position: absolute;
+            z-index: 11;
+            right: .4rem;
+            top: .76rem;
+        }
+
+        .music_box {
+            width: 1.026667rem;
+            height: .746667rem;
+            position: absolute;
+            z-index: 15
+        }
+        /*.music_content{
+
+        }*/
+        .note_1 {
+            width: 9px;
+            height: .226667rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: float1;
+            animation-duration: 2000ms;
+            animation-delay: 400ms;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        .note_2 {
+            width: 7px;
+            height: .2rem;
+            position: absolute;
+            top: 0;
+            left: 1rem;
+            animation-name: float2;
+            animation-duration: 2000ms;
+            animation-delay: 200ms;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        .note_3 {
+            width: .253333rem;
+            height: .2rem;
+            position: absolute;
+            top: 0;
+            left: .96rem;
+            animation-name: float3;
+            animation-duration: 2000ms;
+            animation-delay: 0ms;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+        }
+
+        .money {
+            font-size: .32rem;
+            font-weight: bold;
+            color: #bc381e;
+            padding: 0 1.2rem 0 2.1rem;
+            margin-top: 1.9rem;
+            text-align: center;
+        }
+
+        .has_draw .close {
+            right: 0;
+            top: 0;
+        }
+
+    </style>
+
+    <style>
+        .load-prg .load-tip {
+            width: 100%;
+            height: 1rem;
+            position: absolute;
+            top: 8.8rem;
+            left: 0;
+            z-index: 11;
+            background: url("http://wx.yutong.com/ddhtml/resource/load-text.png?v=1") top center no-repeat;
+            background-size: 3.6rem auto;
+        }
+        .load-prg .progress {
+            width: 50%;
+            height: 0.1rem;
+            position: absolute;
+            top: 8.4rem;
+            left: 25%;
+            z-index: 11;
+            background: #fff;
+            border-radius: 0.125rem;
+            box-shadow: inset 0px 1px 2px #09c2e4;
+            overflow: hidden;
+        }
+        #load-prg-num {
+            width: 0%;
+            height: 100%;
+            background: #09c2e4;
+            float: left;
+        }
+        .shareTips {
+            position: absolute;
+            bottom: 0.8rem;
+            left: 50%;
+            line-height: 0.375rem;
+            font-size: 12px;
+            z-index: 9999999;
+            width: auto;
+            background: rgba(0,0,0,0.7);
+            padding: 0.0925rem 0.625rem;
+            border-radius: 0.175rem;
+            color: #fff;
+            transform: translateX(-50%);
+            display:none;
+        }
+    </style>
+<style id="__WXWORK_INNER_SCROLLBAR_CSS">::-webkit-scrollbar { width: 12px !important; height: 12px !important; }::-webkit-scrollbar-track:vertical {  }::-webkit-scrollbar-thumb:vertical { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-scrollbar-track:horizontal {  }::-webkit-scrollbar-thumb:horizontal { background-color: rgba(136, 141, 152, 0.5) !important; border-radius: 10px !important; background-clip: content-box !important; border:2px solid transparent !important; } ::-webkit-resizer { display: none !important; }</style></head>
+
+<body style="font-size: 12px;">
+    <div class="loading" id="loading">
+        <img src="http://wx.yutong.com/ddhtml/resource/loading.gif" alt="" class="loading_gif">
+        <div class="load-prg">
+            <div class="load-tip">
+            </div>
+            <div class="progress">
+                <div id="load-prg-num" style="width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="music" id="music_wrp">
+        <audio src="http://wx.yutong.com/ddhtml/resource/sound/sound.mp3" loop="" autoplay="true" preload="" id="media"></audio>
+        <img src="http://wx.yutong.com/ddhtml/resource/music.png" alt="" id="music" class="music_box">
+        <div class="note_wrp" id="note_wrp">
+            <img src="http://wx.yutong.com/ddhtml/resource/note_1.png" alt="" class="note_1">
+            <img src="http://wx.yutong.com/ddhtml/resource/note_2.png" alt="" class="note_2">
+            <img src="http://wx.yutong.com/ddhtml/resource/note_3.png" alt="" class="note_3">
+        </div>
+    </div>
+    <div style="margin: auto; width: 100%; height: 100%; overflow: hidden; position: absolute;" class="egret-player canvas_wrp " id="canvas_wrp" data-entry-class="Main" data-orientation="portrait" data-scale-mode="noBorder" data-frame-rate="60" data-content-width="780" data-content-height="1120" data-multi-fingered="2" data-show-fps="false" data-show-log="false" data-show-fps-style="x:0,y:0,size:12,textColor:0xffffff,bgAlpha:0.9">
+    <canvas width="1334" height="1916" style="cursor: inherit; position: absolute; top: 1155px; bottom: 0px; left: 0px; right: 0px; transform-origin: 0% 0% 0px; transform: matrix(0, -1, 1, 0, 0, 0);"></canvas><div id="StageDelegateDiv" style="position: absolute; left: 0px; top: 1155px; border: none; padding: 0px; transform: matrix(0, -1, 1, 0, 0, 0); transform-origin: 0% 0% 0px;"><div style="position: absolute; left: 0px; top: -100px; border: none; padding: 0px; width: 0px; height: 0px; transform-origin: 0% 0% 0px;"><textarea id="egretTextarea" tabindex="-1" style="resize: none; width: 1px; height: 12px; position: absolute; left: 0px; top: 0px; border: none; padding: 0px; outline: thin; background: none; overflow: hidden; word-break: break-all; opacity: 0;"></textarea><input id="egretInput" type="text" tabindex="-1" style="width: 1px; height: 12px; position: absolute; left: 0px; top: 0px; border: none; padding: 0px; outline: thin; background: none; overflow: hidden; word-break: break-all; opacity: 0;"></div></div></div>
+    <div class="share" id="share">
+        <div class="mask" id="share_mask">
+        </div>
+        <div class="share_content">
+            <img src="http://wx.yutong.com/ddhtml/resource/s_bus.png" class="s_bus" alt="">
+            <img src="http://wx.yutong.com/ddhtml/resource/s_text.png" class="s_text" alt="">
+            <img src="http://wx.yutong.com/ddhtml/resource/s_light.png" class="s_light" alt="">
+        </div>
+    </div>
+
+    <div class="draw_wrp" id="draw_wrp" style="display: none">
+        <div class="mask" id="draw_mask"></div>
+        <div class="init_wraper wraper" id="init_wraper" style="display: none">
+            <span class="draw_btn" id="draw_btn"></span>
+        </div>
+        <div class="no_wraper wraper" id="no_wraper" style="display: none">
+            <span class="close"></span>
+        </div>
+        <div class="yes_wraper wraper" id="yes_wraper" style="display: none">
+            <span class="close"></span>
+            <p class="money">0.66</p>
+        </div>
+        <div class="new_user_wraper wraper" id="new_user_wraper" style="display: none">
+            <span class="close"></span>
+            <img src="http://wx.yutong.com/ddhtml/resource/rp_new_user.png?v=1232">
+
+        </div>
+        <div class="wraper has_draw" style="display: none">
+            <span class="close"></span>
+        </div>
+    </div>
+    <div class="shareTips">
+
+    </div>
+    <script type="text/javascript" src="http://dd-h5.oss-cn-beijing.aliyuncs.com/scripts/flexible.js "></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/egret.min_de42afe8.js"></script>
+    <script src="js/egret.web.min_22d454fa.js"></script>
+    <script src="js/eui.min_22447123.js"></script>
+    <script src="js/assetsmanager.min_ac6b67d6.js"></script>
+    <script src="js/tween.min_6c5a88f9.js"></script>
+    <script src="js/dragonBones.min_6252b9c4.js"></script>
+    <script src="js/game.min_45aa06f6.js"></script>
+    <script src="js/promise.min_83a6a5d.js"></script>
+    <script src="js/default.thm_f1875be9.js"></script>
+    <script src="js/main.min_1647f98a.js"></script>
+    <script>
+        var loadScript = function (list, callback) {
+            var loaded = 0;
+            var loadNext = function () {
+                loadSingleScript(list[loaded], function () {
+                    loaded++;
+                    if (loaded >= list.length) {
+                        callback();
+                    }
+                    else {
+                        loadNext();
+                    }
+                })
+            };
+            loadNext();
+        };
+        
+        var loadSingleScript = function (src, callback) {
+            var s = document.createElement('script');
+            s.async = false;
+            s.src = src;
+            s.addEventListener('load', function () {
+                s.parentNode.removeChild(s);
+                s.removeEventListener('load', arguments.callee, false);
+                callback();
+            }, false);
+            document.body.appendChild(s);
+            console.log(s)
+        };
+
+        var xhr = new XMLHttpRequest();
+        // xhr.open('GET', 'http://wx.yutong.com/ddhtml/manifest.json?v=' + Math.random(), true);
+        // xhr.addEventListener("load", function () {
+        //     var manifest = JSON.parse(xhr.response);
+            // var list = manifest.initial.concat(manifest.game);
+            var list=[
+		"http://wx.yutong.com/ddhtml/js/egret.min_de42afe8.js",
+		"http://wx.yutong.com/ddhtml/js/egret.web.min_22d454fa.js",
+		"http://wx.yutong.com/ddhtml/js/eui.min_22447123.js",
+		"http://wx.yutong.com/ddhtml/js/assetsmanager.min_ac6b67d6.js",
+		"http://wx.yutong.com/ddhtml/js/tween.min_6c5a88f9.js",
+		"http://wx.yutong.com/ddhtml/js/dragonBones.min_6252b9c4.js",
+		"http://wx.yutong.com/ddhtml/js/game.min_45aa06f6.js",
+		"http://wx.yutong.com/ddhtml/js/promise.min_83a6a5d.js",
+		"http://wx.yutong.com/ddhtml/js/default.thm_f1875be9.js",
+		"http://wx.yutong.com/ddhtml/js/main.min_1647f98a.js"
+	]
+            // loadScript(list, function () {
+                /**
+                 * {
+                 * "renderMode":, //Engine rendering mode, "canvas" or "webgl"
+                 * "audioType": 0 //Use the audio type, 0: default, 2: web audio, 3: audio
+                 * "antialias": //Whether the anti-aliasing is enabled in WebGL mode, true: on, false: off, defaults to false
+                 * "calculateCanvasScaleFactor": //a function return canvas scale factor
+                 * }
+                 **/
+                egret.runEgret({
+                    renderMode: "webgl", audioType: 0, calculateCanvasScaleFactor: function (context) {
+                        var backingStore = context.backingStorePixelRatio ||
+                            context.webkitBackingStorePixelRatio ||
+                            context.mozBackingStorePixelRatio ||
+                            context.msBackingStorePixelRatio ||
+                            context.oBackingStorePixelRatio ||
+                            context.backingStorePixelRatio || 1;
+                        return (window.devicePixelRatio || 1) / backingStore;
+                    }
+                });
+            // });
+        // });
+        // xhr.send(null);
+
+        // 遮罩层
+        document.getElementById("share_mask").onclick = function () {
+            document.getElementById('share').style.display = "none";
+        };
+        //
+       
+
+        // 音乐
+        var audioAutoPlay = function (id) {
+            var audio = document.getElementById(id),
+                play = function () {
+                    audio.play();
+                    document.removeEventListener("touchstart", play, false);
+                };
+            document.addEventListener("WeixinJSBridgeReady", function () {
+                play();
+            }, false);
+            document.addEventListener('YixinJSBridgeReady', function () {
+                play();
+            }, false);
+            play();
+        };
+        var browers = {}
+        var ua = navigator.userAgent.toLowerCase();
+        browers.Android = ua.match(/android/);
+        browers.iOS = ua.match(/ipad|iphone|ios/);
+        browers.dqd = ua.match(/NewsApp\/([\d\.]+)/i);
+        browers.version = browers.dqd ? parseInt(browers.dqd[1].replace(eval("/\\./ig"), "")) : null;
+        if (browers.iOS) {
+            audioAutoPlay('media');
+        }
+        
+
+
+    </script>
+    <script>
+        var urlPrefix = "http://wx.yutong.com/ddhtml/";
+        if (location.pathname.indexOf("/ddytkc") === 0) {
+            urlPrefix = "http://wx.yutong.com/ddytkc/";
+        }
+
+        $(function () {
+            var isFollow = false,isluckDraw = true;
+
+            window.gotoDraw = function () {
+				$('#draw_wrp').show();
+				alert('奖品已发完，请点击故地重游欣赏各地美景吧！');
+				$('#draw_wrp').hide();
+            };
+            $('#draw_mask').click(function () {
+                $('#draw_wrp').hide();
+            });
+            $('.close').click(function () {
+                $('#draw_wrp').hide();
+            });
+            $('#music_wrp').click(function(){
+                var audio = document.getElementById('media');
+                var note_wrp = document.getElementById('note_wrp');
+      
+            	if(audio.paused){
+                audio.play();
+                note_wrp.style.display = "block"
+            	}else{
+                audio.pause()
+                note_wrp.style.display = "none"
+            	}
+            })
+        });
+    </script>
+    <script src="js/draw.js"></script>
+
+
+
+</body></html>
